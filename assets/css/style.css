@@ -28,3 +28,15 @@ div a img {
     background-color: transparent;
     color: rgba(255,255,255,.75);
 }
+
+/* responsve logo media query - 767px width deliberate to accomodate ipad */
+@media only screen and (max-width:767px) {
+.navbar-brand img {
+    background-image: url(../images/logomini.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    }
+}
