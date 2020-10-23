@@ -43,5 +43,23 @@ div a img {
 /*footer*/
 footer {
     position: absolute;
-    bottom: 2px;
+    bottom: 0.5%;
+}
+
+address {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 5px;
+    color: #fff;
+    line-height: 1px;
+}
+
+address a {
+    color: #028EAF;
+}
+
+span.fab {
+    color: #fff;
+    font-size: xxx-large;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
