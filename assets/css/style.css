@@ -1,5 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap'); /* Google fonts import */
 
+/*Colors*/
+
+    /*footer colors*/
+address a {
+    color: #028EAF;
+}
+
+.bdr-top {
+    border-top: 2px solid #FF785A;
+}
+
+h2 {
+    color: #35CE8D;
+    text-transform: capitalize;
+}
+
+.bdr-left {
+    border-left: 2px solid #FF785A;
+}
+
+.btn-outline-primary {
+    color: #028EAF;
+    border-color: #028EAF;
+}
+
 /* Navigation */
 header {
     font-family: 'Roboto', sans-serif;
@@ -43,18 +68,14 @@ div a img {
 /*footer*/
 footer {
     position: absolute;
-    bottom: 0.5%;
+    bottom: 0.1rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.2rem;
+    color: #fff;
 }
 
 address {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 5px;
-    color: #fff;
-    line-height: 1px;
-}
-
-address a {
-    color: #028EAF;
+    line-height: 0.2rem;
 }
 
 span.fab {
@@ -62,4 +83,21 @@ span.fab {
     font-size: xxx-large;
     margin-bottom: 10px;
     margin-left: 10px;
+}
+.form{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+form p {
+    padding-left: 12px;
+    margin-bottom: 8px;
+}
+
+#newsletter-check {
+    margin:0px 0px;
+}
+
+.form-check-label {
+    padding-left: 2rem;
 }
