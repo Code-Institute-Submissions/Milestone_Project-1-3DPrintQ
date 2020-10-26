@@ -2,7 +2,15 @@
 
 /* Universal */
 body{
-    background-image: url(../images/blizzard.png)
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    background: white;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1; /*for slide-out footer*/
 }
 /*Colors*/
 
@@ -33,6 +41,9 @@ h2 {
 header {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 5px;
+}
+.navbar{
+    background-image: url(../images/blizzard.png);
 }
 
 div a img {
@@ -69,13 +80,34 @@ div a img {
     height: 50px;
     }
 }
+/*main*/
+#tagline {
+    top: 114px;
+    right: 139px;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: xx-large;
+    font-weight: 700;
+}
+
+blockquote span {
+    color: #ff785a;
+}
+
+span:last-child {
+    color: #028EAF;
+}
+
 /*footer*/
 footer {
-    position: absolute;
+    background-image: url(../images/blizzard.png);
+    position: sticky;
     bottom: 0.1rem;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.2rem;
     color: #fff;
+    padding-top:5px;
+    padding-bottom: 5px;
 }
 
 address {
