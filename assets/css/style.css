@@ -146,6 +146,26 @@ blockquote span:last-child {
     position: absolute;
 }
 
+.about-head{
+    margin-top: 11rem;
+    margin-left: 10rem;
+    padding-bottom: 10px;
+    font-size: 3em;
+    font-weight: 500;
+    color: #028EAF;
+    text-decoration: underline #FF785A;
+    text-transform: capitalize;
+}
+
+.about{
+    background-color: #FF785A;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
 /*footer*/
 footer {
     background-image: url(../images/blizzard.png);
