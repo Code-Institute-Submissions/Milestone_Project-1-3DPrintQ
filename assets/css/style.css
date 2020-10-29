@@ -28,6 +28,7 @@ address a {
 h2 {
     color: #35CE8D;
     text-transform: capitalize;
+    font-weight:600;
 }
 
 .bdr-left {
@@ -39,6 +40,10 @@ h2 {
     border-color: #028EAF;
 }
 
+aside > h2 {
+    color: #fff;
+}
+
 /* Navigation */
 header {
     font-family: 'Roboto', sans-serif;
@@ -46,6 +51,11 @@ header {
 }
 .navbar{
     background-image: url(../images/blizzard.png);
+}
+
+.sign-up {
+    color: #35CE8D!important;
+    font-weight: 500;
 }
 
 div a img {
@@ -184,7 +194,7 @@ div p > span:nth-child(7) {
     position: absolute;
 }
 
-.about-head{
+.section-head{
     margin-top: 11rem;
     margin-left: 10rem;
     padding-bottom: 10px;
@@ -204,8 +214,12 @@ div p > span:nth-child(7) {
     padding-bottom:15px;
 }
 
-.img-thumbnail {
+.img-thumbnail, {
     margin-bottom:25px;
+}
+
+#build-carousel {
+    padding-bottom:25px;
 }
 
 /*footer*/
