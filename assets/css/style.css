@@ -4,15 +4,25 @@
 body{
     position: relative;
     min-height: 100vh;
+    padding-top:100px;
 }
 
 main {
     font-family: 'Roboto',sans-serif;
     letter-spacing: 0.25em;
     background: #fff;
-    min-height: 200vh;
+    /*min-height: 200vh;*/
     position: relative;
     z-index: 1; /*for slide-out footer*/
+}
+
+.content {
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: 5px;
+}
+
+.padding {
+    padding:15px 15px;
 }
 /*Colors*/
 
@@ -29,6 +39,7 @@ h2 {
     color: #35CE8D;
     text-transform: capitalize;
     font-weight:600;
+    font-family: 'Roboto',sans-serif!important;
 }
 
 .bdr-left {
@@ -130,16 +141,11 @@ blockquote span:last-child {
     color: #028EAF;
 }
 
-div > span, div > p {
+div > span, .trans-content {
     color:#fff;
     text-transform: capitalize;
     font-weight: 700;
     font-size: 1.8em;
-}
-
-div > p {
-    font-weight:400;
-    text-align: right;
 }
 
 div p > span {
@@ -182,6 +188,9 @@ div p > span:nth-child(7) {
     top: 456px;
     right: 100px;
     position: absolute;
+    color:#fff;
+    text-align: right;
+    font-weight:400;
 }
 
 #bg-box {
@@ -201,7 +210,7 @@ div p > span:nth-child(7) {
     font-size: 3em;
     font-weight: 500;
     color: #028EAF;
-    text-decoration: underline #FF785A;
+    text-decoration: underline #FF785A!important;
     text-transform: capitalize;
 }
 
@@ -214,6 +223,15 @@ div p > span:nth-child(7) {
     padding-bottom:15px;
 }
 
+a:not([href]):not([class]) {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a[title="3D Printing - Wikipedia"]{
+    color: #028EAF;
+}
+
 .img-thumbnail, {
     margin-bottom:25px;
 }
@@ -222,6 +240,38 @@ div p > span:nth-child(7) {
     padding-bottom:25px;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+/*build page*/
+
+pre {
+    white-space: pre-wrap;
+    font-family: 'Source Sans Pro', sans-serif!important;
+    letter-spacing: 5px;
+}
+
+table td, table th {
+    padding-right: inherit!important;
+}
+
+.page-head {
+    padding: 10px 10px;
+    font-size: 3em;
+    font-weight: 500;
+    color: #028EAF;
+    text-decoration: underline #FF785A!important;
+    text-transform: capitalize;
+}
+
+th ~ td {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.nav-tabs {
+    border-bottom: 0px;
+}
 /*footer*/
 footer {
     background-image: url(../images/blizzard.png);
