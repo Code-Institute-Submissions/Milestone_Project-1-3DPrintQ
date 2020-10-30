@@ -206,6 +206,7 @@ To request a new feature or function then please open an issue (here) with propo
 * Bootstrap4: Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 * CSS Styling code and corresponding classes/id’s was that of the developer Jay Bradley.
 * Process to creating slideout footer was taken from this [CSS Tricks Article](https://css-tricks.com/the-slideout-footer/).
+* Invesrion of carousel arrow colours css code from this [stackoverflow Article](https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel). 
 
 ### Content
 Majority of the about content was written by the developer Jay Bradley. As referenced, some is from wikipedia.
