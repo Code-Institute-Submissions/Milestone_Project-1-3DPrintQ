@@ -329,3 +329,7 @@ form p {
 .form-check-label {
     padding-left: 2rem;
 }
+
+textarea {
+    resize: none;
+}
