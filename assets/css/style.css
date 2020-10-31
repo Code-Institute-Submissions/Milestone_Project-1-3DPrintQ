@@ -134,6 +134,10 @@ footer {
     }
 }
 
+.you-tube {
+    width: -webkit-fill-available;
+}
+
 /*main*/
 #tagline {
     top: 114px;
