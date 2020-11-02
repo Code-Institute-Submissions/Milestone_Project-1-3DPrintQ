@@ -244,7 +244,7 @@ a:not([href]):not([class]) {
     text-decoration: inherit;
 }
 
-a[title="3D Printing - Wikipedia"]{
+a[title="3D Printing - Wikipedia"],a[title="Prusa Face Shields"],a[title="Benchspace Cork"]{
     color: #028EAF;
 }
 
@@ -355,4 +355,8 @@ textarea {
 
 ul{
     list-style: none;
+}
+
+.not-sticky {
+    position: inherit!important;
 }
