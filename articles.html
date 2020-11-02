@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <!--bootstrap cdn-->
-    <script
-      src="https://kit.fontawesome.com/35a878bce2.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--fontawesome import-->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  </head>
 
-  <body>
-    <header>
-      <!--Bootstrap navbar-->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <img src="assets/images/logowhite.svg" alt="" />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+	<!--bootstrap cdn-->
+	<script src="https://kit.fontawesome.com/35a878bce2.js" crossorigin="anonymous"></script>
+	<!--fontawesome import-->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+	<header>
+		<!--Bootstrap navbar-->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a href="#" class="navbar-brand">
+					<img src="assets/images/logowhite.svg" alt="" />
           </a>
-          <button
+					<button
             class="navbar-toggler ml-auto"
             type="button"
             data-toggle="collapse"
@@ -38,199 +32,390 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="builds.html">Builds</a>
-              </li>
-              <li class="nav-item dropdown mr-auto active">
-                <a
-                  class="nav-link btn dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Resources
-                </a>
-                <div
-                  class="dropdown-menu"
-                  id="dropdown"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="podcasts-and-videos.html"
-                    >Podcasts & Videos</a
-                  >
-                  <a class="dropdown-item active" href="articles.html"
-                    >Articles<span class="sr-only">(current)</span></a
-                  >
-                  <a class="dropdown-item" href="glossary.html">Glossary</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign-up</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!--end navbar-->
-    <main>
-      <!--main-->
-      <div class="container-fluid mb-4">
-        <div class="row text-center">
-          <div class="col-sm-12">
-            <h1 class="page-head">Articles</h1>
-            <div class="row about">
-              <div class="col-sm-4 offset-md-4">
-                <p class="content">
-                  Catch up here on 3D printing in the news and learn about the impact in which it has had within various industries around the globe.
-                  With it's ability to create prototypes quickly, it's a core part of bringing products to market and in more recent times, how it has helped health services in their fight asgainst a global pandemic! 
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <!--end main-->
-    <!--footer with logo-->
-    <footer class="container-fluid bg-dark">
-      <div class="row">
-        <div class="col-sm-8 d-flex justify-content-between">
-          <div class="row">
-            <div
-              class="col-sm-12 p-2 d-flex justify-content-start align-items-center"
-            >
-              <a href="#"
-                ><img
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="builds.html">Builds</a>
+							</li>
+							<li class="nav-item dropdown mr-auto active">
+								<a class="nav-link btn dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Resources
+								</a>
+								<div class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="podcasts-and-videos.html">Podcasts & Videos</a>
+									<a class="dropdown-item active"
+										href="articles.html">Articles<span class="sr-only">(current)</span></a>
+									<a class="dropdown-item" href="glossary.html">Glossary</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Sign-up</a>
+							</li>
+						</ul>
+					</div>
+			</div>
+		</nav>
+	</header>
+	<!--end navbar-->
+	<main>
+		<!--main-->
+		<div class="container-fluid mb-4">
+			<div class="row text-center">
+				<div class="col-sm-12">
+					<h1 class="page-head">Articles</h1>
+					<div class="row about">
+						<div class="col-sm-4 offset-md-4">
+							<p class="content">
+								Catch up here on 3D printing in the news and learn about the impact in which it has had
+								within various industries around the globe.
+								With it's ability to create prototypes quickly, it's a core part of bringing products to
+								market and in more recent times, how it has helped health services in their fight
+								asgainst a global pandemic!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<article>
+				<div class="row">
+					<div class="col-sm-4 offset-md-2 mt-4 mb-4">
+						<header>
+							<h1>Making Made Right: This Czech Company Guides Global 3-D Printing Pandemic Response</h1>
+						</header>
+						<hr>
+                        <div class="container"><img src="assets/images/sarahauthor.jpeg"><small class="text-muted"><strong>Sarah Goehrke</strong> Contributor<p><time>Mar 28, 2020,01:40pm EDT</time></p></small></div>
+                        <hr>
+					</div>
+					<div class="container">
+						<div class="row justify-content-between">
+							<figure><img src="assets/images/prusagov.jpg" class="img-fluid padding" alt="Josef Prusa and the Czech Government's minister for health"><figcaption class="pl-1"><small class="text-muted">Josef Prusa (second from right) and the Prusa Research team presenting the prototype face shield to the Czech Minister of Health Adam Vojtech (far right) PRUSA RESEARCH</small></figcaption></figure>
+							<div class="col-md-9 col-sm-12 content">
+								<p>As the world continues to develop rapid responses to slow the spread of COVID-19,
+									many
+									eyes have been turned to the maker community. On-demand, localized manufacturing
+									made
+									possible through technologies including 3-D printing (additive manufacturing) is
+									helping
+									in stop-gap supply provision for personal protective equipment (PPE) and other
+									needed-now goods.</p>
+									<p>Alongside major industrial 3-D printing companies — like Carbon, HP, Formlabs,
+										Desktop
+										Metal, Stratasys, and 3D System — coming to the fore of global efforts, is a
+										relatively
+										small company dedicated to desktop 3-D printers.
+										Prusa Research, based in Czechia, is proving itself to be 3-D printing’s city on
+										a
+										hill
+										in terms of pandemic response. <div class="collapse" id="collapseArticleOne">
+											<div class="col pl-0">
+												<p>In three days, Founder Josef Prusa and his team at Prusa Research
+													designed,
+													prototyped, verified, and began mass production of
+													medical-appropriate
+													face
+													shields with both 3-D printed and laser cut plastic components.
+													Approved
+													by
+													the Czech Ministry of Health — including Minister of Health Adam
+													Vojtech
+													—
+													the face shields moved quickly to field testing, full approval, and
+													large-scale production.<figure class="float-right img-wrap"><img src="assets/images/prusafaceshield.jpg" class="img-fluid padding"><figcaption class="pl-1"><small class="text-muted">Prusa Protective Face Shield - RC3 PRUSA RESEARCH</small></figcaption></figure> They have donated 12,000-plus of the masks
+													throughout Czechia. The design also spread at the speed of the
+													internet,
+													and
+													downloads in the thousands saw the design rapidly disseminated to
+													all
+													corners of the world.</p>
+												<p>Many makers have been inspired by the quick turnaround of digital
+													design
+													and
+													digital manufacturing to turn their own 3-D printers to use. There
+													are,
+													however, a right way and a lot of wrong ways to go about using 3-D
+													printing
+													to actually be helpful in the face of pandemic.</p>
+												<div class="col align-self-end">
+													<blockquote>
+														<cite><strong>“It really is incredible. It is just eight days now, and our whole planet, all the 3-D printers are printing face shields. I would never have expected 3-D printing to act so quickly. It is wonderful,” Josef Prusa told me this week in a Skype interview. “I expect in a week or two, traditional supply will kick in for technologies for better manufacturing like injection molding, and then it will take like two weeks to start making them. Until then, the 3-D printing community can make a big impact. Today we will be finishing 20,000 face shields made just by us, basically in just a week. In our small country, it will have a big impact.”</strong></cite>
+													</blockquote>
+												</div>
+												<p>That big impact is not relegated to small countries; the face shield,
+													now
+													on
+													its third iteration, has been downloaded so many times the Prusa
+													team
+													had to
+													turn off their download counter to avoid overloading the servers.
+													<cite>“Before we turned it off, the face shield had about 101,000 downloads,”</cite>
+													Prusa said.</p>
+												<p>Among those downloading the design have been individual makers doing
+													what
+													they can for their local communities’ needs as well as large-scale
+													enterprises. This weekend, the University of Michigan approved the
+													Prusa
+													design for its medical equipment donation drive. The Prusa logo is
+													also
+													visible on the face shields that the team at Ford has been creating
+													using
+													its in-house 3-D printer fleet; Ford has announced the intent to
+													produce
+													75,000 face shields in its first week of such production.<figure class="img-wrap float-left pr-4"><img src="assets/images/communitymakes.jpg" class="img-fluid" alt="Prusa face shields used in the community"><figurecaption><small class="text-muted">Prusa face shields used in the community</small></figurecaption></figure></p>
+												<p>These face shields are a major help in the global scramble for
+													appropriate
+													PPE, which is in short supply. While many 3-D printing efforts first
+													turned
+													to face masks or parts for respirators, many such designs to appear
+													could do
+													more harm than good with a false sense of security or dangerous
+													ineffectiveness. Validating good designs that can be effectively
+													created
+													and
+													provide actual safeguards from the spread of the novel coronavirus
+													is
+													critical. The value of 3-D printing is the ability to fill such
+													needs
+													now,
+													while traditional manufacturing ramps up its response to the mass
+													supplies
+													needed.</p>
+												<p>Prusa’s team was uniquely positioned to step in to create an
+													effective
+													design. Recently labelled as one of Deloitte’s fastest-growing
+													companies
+													in
+													the EMEA region, around 200,000 Prusa 3-D printers have been shipped
+													worldwide. Prusa Research also maintains expertise in design,
+													offering a
+													repository of 3-D printable design files. Building upon a face
+													shield
+													design
+													they found to improve it for safety and comfort, the Prusa design
+													team
+													went
+													through iterations and verification rounds with the Czech Minister
+													of
+													Health
+													before releasing the file. Turning all of their printers to this one
+													purpose, rather than for 3-D printing parts for new 3-D printers
+													(about
+													30%
+													of each Prusa 3-D printer is 3-D printed on Prusa 3-D printers; say
+													that
+													three times fast), their in-house print farm of about 600 3-D
+													printer
+													started making 800 shields per day, quickly ramping up to 3,000 per
+													day.
+												</p>
+												<p>As the design spreads and more 3-D printers around the world are
+													churning
+													out
+													thousands of these face shields, Prusa is making sure to include
+													necessary
+													cautions regarding the production of any PPE to be donated.</p>
+												<p><cite>“Even though you are quarantined at home it does not mean you are not infected. Any equipment you want to give hospitals, you need to act like you’re infected, and use at least a face mask while around the printers. We know when the print is finished that it is sterile because of the high printing temperatures. When you touch it, you should always put on sterile gloves, or at least use a new plastic bag and grab the part through the plastic bag so there is the least amount of possibility of contaminating the part. Everyone should always consult with the hospital or the people they are giving it to about their production environment so it is safe. Always, they will need to sterilize or disinfect in the hospital before they actually use it,”</cite>
+													Prusa cautions.</p>
+												<p>Upping the standards for their design, the Prusa team has worked with
+													labs in
+													Czechia to ensure effectiveness against the exact virus plaguing the
+													world.
+													<cite>“They have live COVID cultures,”</cite> Prusa explained of the
+													labs,
+													<cite>“so we are now testing ways to safely sterilize with this in the field. We should be having some guides and verified tests from the labs in upcoming days so we can guide the community what to do, tell doctors what really works when working with infected patients.”</cite>
+												</p>
+												<p>Educating the community is key for all the homegrown efforts to bring
+													3-D
+													printers to help. Prusa himself is very active on Twitter, often
+													reaching
+													out when he sees photos of face shields made but just lying on the
+													floor;
+													<cite>“I try to send information on how to do it safely,”</cite>
+													Prusa
+													says.
+													<cite>“Many people we worked with previously with medical facilities, and we have loads of printers around the world, so we have thought about these things, but if you are a maker at home you may not have thought about it before.”</cite>
+												</p>
+												<p>Looking beyond the face shields, the team at Prusa Research is also
+													in
+													early
+													stages of exploring designs for goggles with indirect ventilation.
+													These
+													goggles will require more work before their verification and file
+													release,
+													but represent another step forward in makeable, useful PPE. Prusa
+													Research
+													has also been running contests for other designs outside of safety
+													gear
+													that
+													requires verification, such as
+													<cite>“stuff like how to open doors safely without touching the doorknob, or stuff you might run out of if you are at home and cannot go to a shop,”</cite>
+													Prusa says.</p>
+												<p>Preparation has been key to Prusa Research’s approach to the current
+													conditions. Prusa released a blog about why it’s “important to be
+													two
+													steps
+													ahead,” detailing his team’s efforts to operate safely — which have
+													been
+													quite effective, as they have to date had zero cases of COVID-19
+													among
+													their
+													nearly 500 employees. From turning their polymer lab to making 1,000
+													liters
+													of sanitizer to requiring thermal temperature checks before coming
+													into
+													work
+													to adding a pause between manufacturing shifts to sterilize the
+													factory,
+													Prusa’s efforts are to be lauded as the company continues to set an
+													example
+													for 3-D printing companies today.</p>
+												<p>While he is also fighting the potential for normalcy bias in
+													recognizing
+													that
+													relatively severe measures will have to remain in place for some
+													time,
+													and
+													“business as normal” is still quite some ways off, Prusa is keen to
+													look
+													ahead for both his company and the broader 3-D printing industry.
+												</p>
+												<p>Life after the pandemic won’t look the same, that’s simply a given.
+													But
+													for
+													Prusa Research, preparation is key to moving forward for that new
+													normal.
+													There is also hope to be seen — a silver lining that 3-D printing
+													may
+													step
+													more into the mainstream, and this time without the hype.</p>
+												<p><cite>“This is a chance for our desktop 3-D community to show as a mature community, not just a bunch of nerds printing toys,”</cite>
+													Prusa said with a grin.
+													<cite>“For 3-D printing, I think this shows a lot of people that it has a lot of use… This will be a marathon, and I think it might be actually a time for 3-D printers to finally rise because the economics will be cooled down all around the place, I think we can agree on that. And then the 3-D printers are very useful — in right to repair movements, to replace parts, or just to manufacture stuff cheaply, as we have, for example. We have a lot of parts in medical labs. For some uses you have a single-use medical tray that can cost hundreds of euros, but can print it for less. 3-D printing can be very efficient.”</cite>
+												</p>
+											</div>
+										</div>
+										<a class="accordian" data-toggle="collapse" href="#collapseArticleOne"
+											role="button" aria-expanded="false"
+											aria-controls="collapseArticleOne"><small class="text-muted">Read more/less</small></a>
+									</p>
+							</div>
+                            <div class="col-sm-2 align-self-start">archives
+    <p>older articles here</p></div>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</main>
+	<!--end main-->
+	<!--footer with logo-->
+	<footer class="container-fluid bg-dark">
+		<div class="row">
+			<div class="col-sm-8 d-flex justify-content-between">
+				<div class="row">
+					<div class="col-sm-12 p-2 d-flex justify-content-start align-items-center">
+						<a href="#"><img
                   src="assets/images/logowhite.svg"
                   alt=""
                   class="mx-auto d-block"
               /></a>
+					</div>
+					<!--contact details-->
+					<div class="col-sm-6 d-flex align-items-center justify-content-center">
+						<address>
+							<h2>
+								<a href="https://goo.gl/maps/xxrJihnrqXCQjTNB7" target="_blank">Address:</a>
+							</h2>
+							<p>Bravo Digital Designs,</p>
+							<p>Cork.</p>
+							<p>Ireland</p>
+						</address>
+					</div>
+					<div class="col-sm-6 d-flex align-items-center justify-content-center">
+						<address>
+							<h2><a href="mailto:bdigital@design.com">Email:</a></h2>
+							<p>BDigital@designs.com</p>
+						</address>
+					</div>
+					<!--Social-->
+					<div class="col-sm-12 d-flex align-items-end justify-content-center bdr-top">
+						<h6 class="text-muted">Socialise with us!</h6>
+					</div>
+					<div class="col p-2 d-flex justify-content-around align-items-center">
+						<!--use <span> for font awesome icons as more semantically correct-->
+						<a href="https://www.facebook.com/"
+							target="_blank"><span class="fab fa-facebook-square"></span></a>
+						<a href="https://www.instagram.com/"
+							target="_blank"><span class="fab fa-instagram-square"></span></a>
+						<a href="https://www.pinterest.com/"
+							target="_blank"><span class="fab fa-pinterest-square"></span></a>
+						<a href="https://www.twitter.com/"
+							target="_blank"><span class="fab fa-twitter-square"></span></a>
+						<a href="https://www.youtube.com/"
+							target="_blank"><span class="fab fa-youtube-square"></span></a>
+					</div>
+				</div>
+			</div>
+			<!--contact form-->
+			<div class="col-sm-4 form bdr-left">
+				<h2>Contact us!</h2>
+				<form>
+					<p>Got something to add?<br />We’d <em>love</em> to hear!</p>
+					<div class="form-row form-group text-center col-auto">
+						<input type="text" class="form-control" placeholder="Your Name" />
             </div>
-            <!--contact details-->
-            <div
-              class="col-sm-6 d-flex align-items-center justify-content-center"
-            >
-              <address>
-                <h2>
-                  <a
-                    href="https://goo.gl/maps/xxrJihnrqXCQjTNB7"
-                    target="_blank"
-                    >Address:</a
-                  >
-                </h2>
-                <p>Bravo Digital Designs,</p>
-                <p>Cork.</p>
-                <p>Ireland</p>
-              </address>
-            </div>
-            <div
-              class="col-sm-6 d-flex align-items-center justify-content-center"
-            >
-              <address>
-                <h2><a href="mailto:bdigital@design.com">Email:</a></h2>
-                <p>BDigital@designs.com</p>
-              </address>
-            </div>
-            <!--Social-->
-            <div
-              class="col-sm-12 d-flex align-items-end justify-content-center bdr-top"
-            >
-              <h6 class="text-muted">Socialise with us!</h6>
-            </div>
-            <div
-              class="col p-2 d-flex justify-content-around align-items-center"
-            >
-              <!--use <span> for font awesome icons as more semantically correct-->
-              <a href="https://www.facebook.com/" target="_blank"
-                ><span class="fab fa-facebook-square"></span
-              ></a>
-              <a href="https://www.instagram.com/" target="_blank"
-                ><span class="fab fa-instagram-square"></span
-              ></a>
-              <a href="https://www.pinterest.com/" target="_blank"
-                ><span class="fab fa-pinterest-square"></span
-              ></a>
-              <a href="https://www.twitter.com/" target="_blank"
-                ><span class="fab fa-twitter-square"></span
-              ></a>
-              <a href="https://www.youtube.com/" target="_blank"
-                ><span class="fab fa-youtube-square"></span
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!--contact form-->
-        <div class="col-sm-4 form bdr-left">
-          <h2>Contact us!</h2>
-          <form>
-            <p>Got something to add?<br />We’d <em>love</em> to hear!</p>
-            <div class="form-row form-group text-center col-auto">
-              <input type="text" class="form-control" placeholder="Your Name" />
-            </div>
-            <div class="form-row form-group text-center col-auto">
-              <input
+						<div class="form-row form-group text-center col-auto">
+							<input
                 type="email"
                 class="form-control"
                 placeholder="Your Email Address"
                 aria-describedby="emailHelp"
               />
-              <small id="emailHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small
-              >
-            </div>
-            <div class="form-row form-group text-center col-auto">
-              <textarea
+							<small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-row form-group text-center col-auto">
+							<textarea
                 class="form-control"
                 rows="2"
                 placeholder="Your Message"
               ></textarea>
-            </div>
-            <div
-              class="form-row form-group col-auto d-flex justify-content-start align-items-center text-center"
-            >
-              <input
+						</div>
+						<div
+							class="form-row form-group col-auto d-flex justify-content-start align-items-center text-center">
+							<input
                 type="checkbox"
                 class="form-check-input"
                 id="newsletter-check"
                 checked
               />
-              <label class="form-check-label" for="newsletter-check"
-                >Add me to the mailing list!</label
-              >
-            </div>
-            <div class="form-row form-group justify-content-center col-auto">
-              <button type="button" class="btn btn-outline-primary">
+							<label class="form-check-label" for="newsletter-check"
+                >Add me to the mailing list!</label>
+						</div>
+						<div class="form-row form-group justify-content-center col-auto">
+							<button type="button" class="btn btn-outline-primary">
                 Submit
               </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </footer>
-    <!--end footer-->
-    <!--bootstrap script-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+						</div>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<!--end footer-->
+	<!--bootstrap script-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+	</script>
+</body>
+
 </html>
