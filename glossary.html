@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <!--bootstrap cdn-->
-    <script
-      src="https://kit.fontawesome.com/35a878bce2.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--fontawesome import-->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-  </head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+	<!--bootstrap cdn-->
+	<script src="https://kit.fontawesome.com/35a878bce2.js" crossorigin="anonymous"></script>
+	<!--fontawesome import-->
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
 
-  <body>
-    <header>
-      <!--Bootstrap navbar-->
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a href="#" class="navbar-brand">
-            <img src="assets/images/logowhite.svg" alt="" />
+<body>
+	<header>
+		<!--Bootstrap navbar-->
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<a href="#" class="navbar-brand">
+					<img src="assets/images/logowhite.svg" alt="" />
           </a>
-          <button
+					<button
             class="navbar-toggler ml-auto"
             type="button"
             data-toggle="collapse"
@@ -38,64 +31,51 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html"
-                  >Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html#about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="builds.html">Builds</a>
-              </li>
-              <li class="nav-item dropdown mr-auto active">
-                <a
-                  class="nav-link btn dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Resources
-                </a>
-                <div
-                  class="dropdown-menu"
-                  id="dropdown"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="podcasts-and-videos.html">Podcasts & Videos</a>
-                  <a class="dropdown-item" href="articles.html">Articles</a>
-                  <a class="dropdown-item active" href="glossary.html">Glossary<span class="sr-only">(current)</span></a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sign-up</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header> <!--end navbar-->
-    <main> <!--main--> 
-    <div class="container-fluid mb-4">
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index.html#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="builds.html">Builds</a>
+							</li>
+							<li class="nav-item dropdown mr-auto active">
+								<a class="nav-link btn dropdown-toggle" href="#" id="navbarDropdown" role="button"
+									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Resources
+								</a>
+								<div class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
+									<div class="dropdown-divider"></div>
+									<a class="dropdown-item" href="podcasts-and-videos.html">Podcasts & Videos</a>
+									<a class="dropdown-item" href="articles.html">Articles</a>
+									<a class="dropdown-item active"
+										href="glossary.html">Glossary<span class="sr-only">(current)</span></a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Sign-up</a>
+							</li>
+						</ul>
+					</div>
+			</div>
+		</nav>
+	</header>
+	<!--end navbar-->
+	<main>
+		<!--main-->
+		<div class="container-fluid mb-4">
 			<div class="row text-center">
 				<div class="col-sm-12">
 					<h1 class="page-head">Glossary</h1>
-					<div class="row about tab-content" id="glossary-tabContent">
+					<div class="row about">
 						<div class="col-sm-4 offset-md-4">
-							<ul
-              class="nav nav-tabs justify-content-around padding"
-              id="glossary-tab"
-              role="tablist"
-            >
-              <li class="nav-item">
-                <button
-                  class="btn btn-success"
+							<ul class="nav nav-tabs justify-content-center padding" id="glossary-tab" role="tablist">
+								<li class="nav-item">
+									<button
+                  class="btn"
                   type="button"
                   data-toggle="tab"
                   data-target="#aCollapse"
@@ -105,8 +85,8 @@
                   id="glossary-aCollapse-tab"
                   aria-selected="false"
                 >A</button></li>
-                <li class="nav-item">
-                <button
+								<li class="nav-item">
+									<button
                   class="btn"
                   type="button"
                   data-toggle="tab"
@@ -116,153 +96,459 @@
                   role="tab"
                   id="glossary-bCollapse-tab"
                   aria-selected="false"
-                >B</button></li></ul>
-								A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - Q - R - S - T - U - V - W - X - Y - Z
-							
+                >B</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#cCollapse"
+                  aria-expanded="false"
+                  aria-controls="cCollapse"
+                  role="tab"
+                  id="glossary-cCollapse-tab"
+                  aria-selected="false"
+                >C</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#dCollapse"
+                  aria-expanded="false"
+                  aria-controls="dCollapse"
+                  role="tab"
+                  id="glossary-dCollapse-tab"
+                  aria-selected="false"
+                >D</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#eCollapse"
+                  aria-expanded="false"
+                  aria-controls="eCollapse"
+                  role="tab"
+                  id="glossary-eCollapse-tab"
+                  aria-selected="false"
+                >E</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#fCollapse"
+                  aria-expanded="false"
+                  aria-controls="fCollapse"
+                  role="tab"
+                  id="glossary-fCollapse-tab"
+                  aria-selected="false"
+                >F</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#gCollapse"
+                  aria-expanded="false"
+                  aria-controls="gCollapse"
+                  role="tab"
+                  id="glossary-gCollapse-tab"
+                  aria-selected="false"
+                >G</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#hCollapse"
+                  aria-expanded="false"
+                  aria-controls="hCollapse"
+                  role="tab"
+                  id="glossary-hCollapse-tab"
+                  aria-selected="false"
+                >H</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#iCollapse"
+                  aria-expanded="false"
+                  aria-controls="iCollapse"
+                  role="tab"
+                  id="glossary-iCollapse-tab"
+                  aria-selected="false"
+                >I</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#jCollapse"
+                  aria-expanded="false"
+                  aria-controls="jCollapse"
+                  role="tab"
+                  id="glossary-jCollapse-tab"
+                  aria-selected="false"
+                >J</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#kCollapse"
+                  aria-expanded="false"
+                  aria-controls="kCollapse"
+                  role="tab"
+                  id="glossary-kCollapse-tab"
+                  aria-selected="false"
+                >K</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#lCollapse"
+                  aria-expanded="false"
+                  aria-controls="lCollapse"
+                  role="tab"
+                  id="glossary-lCollapse-tab"
+                  aria-selected="false"
+                >L</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#mCollapse"
+                  aria-expanded="false"
+                  aria-controls="mCollapse"
+                  role="tab"
+                  id="glossary-mCollapse-tab"
+                  aria-selected="false"
+                >M</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#nCollapse"
+                  aria-expanded="false"
+                  aria-controls="nCollapse"
+                  role="tab"
+                  id="glossary-nCollapse-tab"
+                  aria-selected="false"
+                >N</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#oCollapse"
+                  aria-expanded="false"
+                  aria-controls="oCollapse"
+                  role="tab"
+                  id="glossary-oCollapse-tab"
+                  aria-selected="false"
+                >O</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#pCollapse"
+                  aria-expanded="false"
+                  aria-controls="pCollapse"
+                  role="tab"
+                  id="glossary-pCollapse-tab"
+                  aria-selected="false"
+                >P</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#qCollapse"
+                  aria-expanded="false"
+                  aria-controls="qCollapse"
+                  role="tab"
+                  id="glossary-qCollapse-tab"
+                  aria-selected="false"
+                >Q</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#rCollapse"
+                  aria-expanded="false"
+                  aria-controls="rCollapse"
+                  role="tab"
+                  id="glossary-rCollapse-tab"
+                  aria-selected="false"
+                >R</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#sCollapse"
+                  aria-expanded="false"
+                  aria-controls="sCollapse"
+                  role="tab"
+                  id="glossary-sCollapse-tab"
+                  aria-selected="false"
+                >S</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#tCollapse"
+                  aria-expanded="false"
+                  aria-controls="tCollapse"
+                  role="tab"
+                  id="glossary-tCollapse-tab"
+                  aria-selected="false"
+                >T</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#uCollapse"
+                  aria-expanded="false"
+                  aria-controls="uCollapse"
+                  role="tab"
+                  id="glossary-uCollapse-tab"
+                  aria-selected="false"
+                >U</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#vCollapse"
+                  aria-expanded="false"
+                  aria-controls="vCollapse"
+                  role="tab"
+                  id="glossary-vCollapse-tab"
+                  aria-selected="false"
+                >V</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#wCollapse"
+                  aria-expanded="false"
+                  aria-controls="wCollapse"
+                  role="tab"
+                  id="glossary-wCollapse-tab"
+                  aria-selected="false"
+                >W</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#xCollapse"
+                  aria-expanded="false"
+                  aria-controls="xCollapse"
+                  role="tab"
+                  id="glossary-xCollapse-tab"
+                  aria-selected="false"
+                >X</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#yCollapse"
+                  aria-expanded="false"
+                  aria-controls="yCollapse"
+                  role="tab"
+                  id="glossary-yCollapse-tab"
+                  aria-selected="false"
+                >Y</button></li>
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#zCollapse"
+                  aria-expanded="false"
+                  aria-controls="zCollapse"
+                  role="tab"
+                  id="glossary-zCollapse-tab"
+                  aria-selected="false"
+                >Z</button></li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
-        <div
-            class="col-sm-12 tab-pane fade show active mt-3"
-            id="aCollapse"
-            role="tabpanel"
-          >a's here
-        </div>
-        <div
-            class="col-sm-12 tab-pane fade active mt-3"
-            id="bCollapse"
-            role="tabpanel"
-          >b's here
-        </div>
-    </div>
-    </main> <!--end main-->
-    <!--footer with logo-->
-    <footer class="container-fluid bg-dark">
-      <div class="row">
-        <div class="col-sm-8 d-flex justify-content-between">
-          <div class="row">
-            <div
-              class="col-sm-12 p-2 d-flex justify-content-start align-items-center"
-            >
-              <a href="#"
-                ><img
+			<div class="container">
+				<div class="row tab-content text-center" id="glossary-tabContent">
+					<div class="col-sm-12 tab-pane fade show active mt-3" id="aCollapse" role="tabpanel">a's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="bCollapse" role="tabpanel">b's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="cCollapse" role="tabpanel">c's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="dCollapse" role="tabpanel">d's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="eCollapse" role="tabpanel">e's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="fCollapse" role="tabpanel">f's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="gCollapse" role="tabpanel">g's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="hCollapse" role="tabpanel">h's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="iCollapse" role="tabpanel">i's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="jCollapse" role="tabpanel">j's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="kCollapse" role="tabpanel">k's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="lCollapse" role="tabpanel">l's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="mCollapse" role="tabpanel">m's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="nCollapse" role="tabpanel">n's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="oCollapse" role="tabpanel">o's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="pCollapse" role="tabpanel">p's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="qCollapse" role="tabpanel">q's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="rCollapse" role="tabpanel">r's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="sCollapse" role="tabpanel">s's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="tCollapse" role="tabpanel">t's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="uCollapse" role="tabpanel">u's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="vCollapse" role="tabpanel">v's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="wCollapse" role="tabpanel">w's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="xCollapse" role="tabpanel">x's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="yCollapse" role="tabpanel">y's here
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="zCollapse" role="tabpanel">z's here
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<!--end main-->
+	<!--footer with logo-->
+	<footer class="container-fluid bg-dark">
+		<div class="row">
+			<div class="col-sm-8 d-flex justify-content-between">
+				<div class="row">
+					<div class="col-sm-12 p-2 d-flex justify-content-start align-items-center">
+						<a href="#"><img
                   src="assets/images/logowhite.svg"
                   alt=""
                   class="mx-auto d-block"
               /></a>
+					</div>
+					<!--contact details-->
+					<div class="col-sm-6 d-flex align-items-center justify-content-center">
+						<address>
+							<h2>
+								<a href="https://goo.gl/maps/xxrJihnrqXCQjTNB7" target="_blank">Address:</a>
+							</h2>
+							<p>Bravo Digital Designs,</p>
+							<p>Cork.</p>
+							<p>Ireland</p>
+						</address>
+					</div>
+					<div class="col-sm-6 d-flex align-items-center justify-content-center">
+						<address>
+							<h2><a href="mailto:bdigital@design.com">Email:</a></h2>
+							<p>BDigital@designs.com</p>
+						</address>
+					</div>
+					<!--Social-->
+					<div class="col-sm-12 d-flex align-items-end justify-content-center bdr-top">
+						<h6 class="text-muted">Socialise with us!</h6>
+					</div>
+					<div class="col p-2 d-flex justify-content-around align-items-center">
+						<!--use <span> for font awesome icons as more semantically correct-->
+						<a href="https://www.facebook.com/"
+							target="_blank"><span class="fab fa-facebook-square"></span></a>
+						<a href="https://www.instagram.com/"
+							target="_blank"><span class="fab fa-instagram-square"></span></a>
+						<a href="https://www.pinterest.com/"
+							target="_blank"><span class="fab fa-pinterest-square"></span></a>
+						<a href="https://www.twitter.com/"
+							target="_blank"><span class="fab fa-twitter-square"></span></a>
+						<a href="https://www.youtube.com/"
+							target="_blank"><span class="fab fa-youtube-square"></span></a>
+					</div>
+				</div>
+			</div>
+			<!--contact form-->
+			<div class="col-sm-4 form bdr-left">
+				<h2>Contact us!</h2>
+				<form>
+					<p>Got something to add?<br />We’d <em>love</em> to hear!</p>
+					<div class="form-row form-group text-center col-auto">
+						<input type="text" class="form-control" placeholder="Your Name" />
             </div>
-            <!--contact details-->
-            <div
-              class="col-sm-6 d-flex align-items-center justify-content-center"
-            >
-              <address>
-                <h2>
-                  <a
-                    href="https://goo.gl/maps/xxrJihnrqXCQjTNB7"
-                    target="_blank"
-                    >Address:</a
-                  >
-                </h2>
-                <p>Bravo Digital Designs,</p>
-                <p>Cork.</p>
-                <p>Ireland</p>
-              </address>
-            </div>
-            <div
-              class="col-sm-6 d-flex align-items-center justify-content-center"
-            >
-              <address>
-                <h2><a href="mailto:bdigital@design.com">Email:</a></h2>
-                <p>BDigital@designs.com</p>
-              </address>
-            </div>
-            <!--Social-->
-            <div
-              class="col-sm-12 d-flex align-items-end justify-content-center bdr-top"
-            >
-              <h6 class="text-muted">Socialise with us!</h6>
-            </div>
-            <div
-              class="col p-2 d-flex justify-content-around align-items-center"
-            >
-              <!--use <span> for font awesome icons as more semantically correct-->
-              <a href="https://www.facebook.com/" target="_blank"
-                ><span class="fab fa-facebook-square"></span
-              ></a>
-              <a href="https://www.instagram.com/" target="_blank"
-                ><span class="fab fa-instagram-square"></span
-              ></a>
-              <a href="https://www.pinterest.com/" target="_blank"
-                ><span class="fab fa-pinterest-square"></span
-              ></a>
-              <a href="https://www.twitter.com/" target="_blank"
-                ><span class="fab fa-twitter-square"></span
-              ></a>
-              <a href="https://www.youtube.com/" target="_blank"
-                ><span class="fab fa-youtube-square"></span
-              ></a>
-            </div>
-          </div>
-        </div>
-        <!--contact form-->
-        <div class="col-sm-4 form bdr-left">
-          <h2>Contact us!</h2>
-          <form>
-            <p>Got something to add?<br />We’d <em>love</em> to hear!</p>
-            <div class="form-row form-group text-center col-auto">
-              <input type="text" class="form-control" placeholder="Your Name" />
-            </div>
-            <div class="form-row form-group text-center col-auto">
-              <input
+						<div class="form-row form-group text-center col-auto">
+							<input
                 type="email"
                 class="form-control"
                 placeholder="Your Email Address"
                 aria-describedby="emailHelp"
               />
-              <small id="emailHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small
-              >
-            </div>
-            <div class="form-row form-group text-center col-auto">
-              <textarea
+							<small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-row form-group text-center col-auto">
+							<textarea
                 class="form-control"
                 rows="2"
                 placeholder="Your Message"
               ></textarea>
-            </div>
-            <div
-              class="form-row form-group col-auto d-flex justify-content-start align-items-center text-center"
-            >
-              <input
+						</div>
+						<div
+							class="form-row form-group col-auto d-flex justify-content-start align-items-center text-center">
+							<input
                 type="checkbox"
                 class="form-check-input"
                 id="newsletter-check"
                 checked
               />
-              <label class="form-check-label" for="newsletter-check"
-                >Add me to the mailing list!</label
-              >
-            </div>
-            <div class="form-row form-group justify-content-center col-auto">
-              <button type="button" class="btn btn-outline-primary">
+							<label class="form-check-label" for="newsletter-check"
+                >Add me to the mailing list!</label>
+						</div>
+						<div class="form-row form-group justify-content-center col-auto">
+							<button type="button" class="btn btn-outline-primary">
                 Submit
               </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </footer> <!--end footer-->
-    <!--bootstrap script-->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+						</div>
+				</form>
+			</div>
+		</div>
+	</footer>
+	<!--end footer-->
+	<!--bootstrap script-->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+	</script>
+</body>
 </html>
