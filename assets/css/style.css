@@ -55,6 +55,16 @@ aside > h2 {
     color: #fff;
 }
 
+.trans-modal {
+    background-color: rgba(142,136,136,0.9);
+    border: 2px solid #ff785a;
+    color: #fff;
+}
+
+button.close {
+    color:#fff;
+}
+
 /* Navigation */
 header {
     font-family: 'Roboto', sans-serif;
