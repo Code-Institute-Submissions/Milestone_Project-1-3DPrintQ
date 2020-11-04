@@ -11,7 +11,7 @@ main {
     font-family: 'Roboto',sans-serif;
     letter-spacing: 0.25em;
     background: #fff;
-    /*min-height: 200vh;*/
+    min-height: 75vh;
     position: relative;
     z-index: 1; /*for slide-out footer*/
 }
