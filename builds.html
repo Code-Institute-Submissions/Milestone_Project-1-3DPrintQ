@@ -14,6 +14,37 @@
 </head>
 
 <body>
+<!-- Sign up Modal -->
+<div class="modal fade" id="signupModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered row justify-content-center">
+    <div class="modal-content col-sm-8 content trans-modal">
+      <div class="modal-header">
+        <h4 class="modal-title" id="signupModalLabel"><strong>Newsletter</strong></h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Signing up to our Newsletter keeps you up to date with all the latest news and grants you discounts with our partners!
+        <form>
+        <div class="form-row form-group text-center col-auto pt-4">
+						<input type="text" class="form-control" placeholder="Name" />
+            </div>
+		<div class="form-row form-group text-center col-auto pb-4">
+							<input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+              />
+      </div>
+      </form>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn sign-up"><h4>Sign Me Up!</h4></button>
+      </div>
+    </div>
+    </div>
+    </div>
+</div> <!-- End Sign up Modal-->
 	<header>
 		<!--Bootstrap navbar-->
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
@@ -56,7 +87,7 @@
 								</div>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link sign-up" href="#">Sign-up</a>
+								<a class="nav-link sign-up" href="#signupModal" data-toggle="modal">Sign-up</a>
 							</li>
 						</ul>
 					</div>
