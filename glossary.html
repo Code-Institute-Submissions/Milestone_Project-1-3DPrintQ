@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,8 +72,20 @@
 				<div class="col-sm-12">
 					<h1 class="page-head">Glossary</h1>
 					<div class="row about">
-						<div class="col-sm-4 offset-md-4">
-							<ul class="nav nav-tabs justify-content-center padding" id="glossary-tab" role="tablist">
+						<div class="col-md-8 offset-md-2 col-lg-4 offset-lg-4">
+							<ul class="nav nav-tabs justify-content-center padding" id="glossary-tab" role="tablist"> <!--A-Z buttons-->
+								<li class="nav-item">
+									<button
+                  class="btn"
+                  type="button"
+                  data-toggle="tab"
+                  data-target="#threeCollapse"
+                  aria-expanded="false"
+                  aria-controls="threeCollapse"
+                  role="tab"
+                  id="glossary-threeCollapse-tab"
+                  aria-selected="false"
+                >3D</button></li>
 								<li class="nav-item">
 									<button
                   class="btn"
@@ -385,67 +398,468 @@
                   id="glossary-zCollapse-tab"
                   aria-selected="false"
                 >Z</button></li>
-							</ul>
+							</ul> <!--End A-Z Buttons-->
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="container">
-				<div class="row tab-content text-center" id="glossary-tabContent">
-					<div class="col-sm-12 tab-pane fade show active mt-3" id="aCollapse" role="tabpanel">a's here
+            <section>
+			<div class="container"> <!--A-Z of Glossary-->
+				<div class="row tab-content" id="glossary-tabContent">
+					<div class="col-sm-12 tab-pane fade show active mt-3" id="threeCollapse" role="tabpanel"> <!--3D-->
+						<dl>
+							<dt><dfn><strong>3D model</strong></dfn></dt>
+							<dd>A 3D design typically produced on a CAD program.</dd>
+							<dt><dfn>3D modelling<strong></strong></dfn></dt>
+							<dd>The act of using 3D CAD programs to produce a design.</dd>
+							<dt><dfn><strong>3D printer</strong></dfn></dt>
+							<dd>An additive manufacturing machine that constructs a solid shape by building one layer at
+								a time.</dd>
+							<dt><dfn><strong>3D printing</strong></dfn></dt>
+							<dd>The act of using an additive manufacturing machine (3D printer) to produce a solid
+								object one layer at a time using a computer model (also known as additive
+								manufacturing).</dd>
+							<dt><dfn><strong>3D scan</strong></dfn></dt>
+							<dd>A process that captures the geometry of a real-world object and uses that data to
+								produce a 3D model.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="bCollapse" role="tabpanel">b's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="aCollapse" role="tabpanel"> <!--A-->
+						<dl>
+							<dt><dfn><strong>ABS</strong></dfn></dt>
+							<dd>Acrylonitrile butadiene styrene (ABS) is a thermoplastic polymer commonly used in FDM 3D
+								printing.</dd>
+							<dt><dfn><strong>Acetone treatment</strong></dfn></dt>
+							<dd>A post processing treatment often applied to 3D printed ABS parts to smooth the surface.
+							</dd>
+							<dt><dfn><strong>Additive manufacturing</strong></dfn></dt>
+							<dd>The process of fabricating a part by adding material in layers (also known as 3D
+								printing).</dd>
+							<dt><dfn><strong>Amorphous</strong></dfn></dt>
+							<dd>Any noncrystalline solid in which the atoms and molecules are not organized in a
+								definite lattice pattern. Glass and polymers are typical amorphous solids. The opposite
+								to crystalline.</dd>
+							<dt><dfn><strong>Anisotropic</strong></dfn></dt>
+							<dd>A material that has varying physical properties when measured in different directions.
+								Wood and composites are common examples of anisotropic materials. The opposite to
+								isotropic.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="cCollapse" role="tabpanel">c's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="bCollapse" role="tabpanel"> <!--B-->
+						<dl>
+							<dt><dfn><strong>Binder jetting</strong></dfn></dt>
+							<dd>Binder Jetting uses thin layers of powder to build up a 3D model. A colored binding
+								agent extruded from a nozzle binding the powder together, solidifying the object with
+								the desired colored surface. After the printing process, the models are strengthened
+								with superglue and UV coated to prevent de-coloration by sunlight.</dd>
+							<dt><dfn><strong>Breakaway Support Technology (BST)</strong></dfn></dt>
+							<dd>Used by printers which add disposable supports to sloping, or overhanging parts. These
+								supports then have to be manually removed by hand when the object is complete.</dd>
+							<dt><dfn><strong>Brim</strong></dfn></dt>
+							<dd>A single flat layer printed around the base of a model to prevent warping. The width of
+								the brim can typically be altered in a slicer program.</dd>
+							<dt><dfn><strong>Bridge</strong></dfn></dt>
+							<dd>Occurs when the printer is required to print between 2 supports or anchor points.
+								Because there is no support offered for the initial layer being printed (there is
+								nothing to build upon) and it is required to “bridge” a gap.</dd>
+							<dt><dfn><strong>Brittleness</strong></dfn></dt>
+							<dd>A property of materials where it breaks without significant deformation. Chalk and
+								ceramics are examples of brittle materials.</dd>
+							<dt><dfn><strong>Build Envelope</strong></dfn></dt>
+							<dd>The maximum physical size of print that can be produced by a specific 3D printer. Build
+								envelopes vary greatly, and are an important consideration when choosing a 3D printer.
+							</dd>
+							<dt><dfn><strong>Build plate</strong></dfn></dt>
+							<dd>The area where a 3D print is printed upon. Also commonly called print bed, or bed. Can
+								also refer to a ‘heated bed’ in which the build plate is kept warm to prevent warping or
+								curling.</dd>
+							<dt><dfn><strong>Build resolution</strong></dfn></dt>
+							<dd>Typically refers to the layer height that a 3D print is printed at. Similar to the
+								resolution on a television or computer monitor but in 3D the lower the build layer
+								height the higher the part resolution.</dd>
+							<dt><dfn><strong>Build time</strong></dfn></dt>
+							<dd>The total time it takes for a 3D printer to complete a 3D print.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="dCollapse" role="tabpanel">d's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="cCollapse" role="tabpanel"> <!--C-->
+						<dl>
+							<dt><dfn><strong>CAD</strong></dfn></dt>
+							<dd>Computer aided design – a method of design where a computer program is used to create 3D
+								objects in the form of electronic files.</dd>
+							<dt><dfn><strong>Calibration</strong></dfn></dt>
+							<dd>Alignment of one part relative to another, such as the parallel alignment that would be
+								found between the print bed and extrusion nozzle of a 3D printer.</dd>
+							<dt><dfn><strong>Casting</strong></dfn></dt>
+							<dd>The process of pouring a liquid material (typically metal) into a hollow cavity to
+								produce a solid part of a specific shape.</dd>
+							<dt><dfn><strong>CNC machining</strong></dfn></dt>
+							<dd>Computer numerically controlled machining – a subtractive method of manufacturing that
+								involves a computerized machine removing material over a predetermined path to produce a
+								final part.</dd>
+							<dt><dfn><strong>Creep</strong></dfn></dt>
+							<dd>The tendency for materials to move or deform over time when subjected to a continuous
+								load. Resins and polymers often experience this phenomena.</dd>
+							<dt><dfn><strong>Crystalline</strong></dfn></dt>
+							<dd>Any solid in which the atoms and molecules are organized in a lattice pattern. Metals
+								are crystalline solids. The opposite to amorphous.</dd>
+							<dt><dfn><strong>Cupping</strong></dfn></dt>
+							<dd>Occurs in the SLA process when a hollow section of a print sucks up resin during the
+								peel process (similar to a an upside down empty cup entering water). This suction effect
+								can cause a part with thin walls to fracture.</dd>
+							<dt><dfn><strong>Curling</strong></dfn></dt>
+							<dd>An upward contraction of extruded filament from the bottom outer edges of a print inward
+								due to factors such as uneven heating and cooling.</dd>
+							<dt><dfn><strong>Curing</strong></dfn></dt>
+							<dd>Hardening of resin or photopolymers used for 3D printing typically done with a UV light.
+							</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="eCollapse" role="tabpanel">e's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="dCollapse" role="tabpanel"> <!--D-->
+						<dl>
+							<dt><dfn><strong>DLP (Digital Light Processing)</strong></dfn></dt>
+							<dd>A display device based on optical micro-electro-mechanical technology that uses a
+								digital micro mirror device. This technology is used in DLP front projectors, but also
+								used in additive manufacturing as a power source in some printers to cure resins into
+								solid 3D objects.</dd>
+							<dt><dfn><strong>Dual Extruder</strong></dfn></dt>
+							<dd>An extruder with two nozzles that allows for printing with multiple colors, textures,
+								and resolutions. Dual extruders also allow for simultaneous printing.</dd>
+							<dt><dfn><strong>Ductility</strong></dfn></dt>
+							<dd>A material is said to be ductile if it is able to be deformed without losing toughness.
+								Wire is an example of a ductile material. The opposite to brittle.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="fCollapse" role="tabpanel">f's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="eCollapse" role="tabpanel"> <!--E-->
+						<dl>
+							<dt><dfn><strong>Elongation</strong></dfn></dt>
+							<dd>Pulling or stretching a material. An important term in plastics to understand how a
+								material will deform under load.</dd>
+							<dt><dfn><strong>End part</strong></dfn></dt>
+							<dd>A component that is intended to be used directly in a functional capacity.</dd>
+							<dt><dfn><strong>End Stop</strong></dfn></dt>
+							<dd>RepRap’s Cartesian axes all need a datum (also known as home position or end-stop) to
+								reference their movements. At the start of each build each axis needs to back up until
+								the datum point is reached. The switches also help protect the machine from moving past
+								its intended range and damaging itself.</dd>
+							<dt><dfn><strong>Extrude</strong></dfn></dt>
+							<dd>The act of placing the build material on the build platform, normally by heating
+								thermoplastic to a liquid state and pushing it through a small nozzle in order to build
+								up a 3D object as it cools and solidifies.</dd>
+							<dt><dfn><strong>Extruder</strong></dfn></dt>
+							<dd>The part of a 3D printer which consists of a cold end to pull in the build material and
+								a hot end to melt and extrude the build material.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="gCollapse" role="tabpanel">g's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="fCollapse" role="tabpanel"> <!--F-->
+						<dl>
+							<dt><dfn><strong>FDM (Fused Deposition Modeling (FDM)</strong></dfn></dt>
+							<dd>uses a string of solid material (filament), pushing it through a heated nozzle and
+								melting it in the process. The printer continuously moves this nozzle around, laying
+								down the melted material at a precise location, where it instantly cools down and
+								solidifies. This builds up the model layer by layer. The most common 3D printing
+								technology.</dd>
+							<dt><dfn><strong>Flexural strength</strong></dfn></dt>
+							<dd>The stress (in MPa) at failure in bending.</dd>
+							<dt><dfn><strong>Filament</strong></dfn></dt>
+							<dd>The general term given to the material used in FDM. Typically supplied in coils or rolls
+								the filament is heated up and fed through the nozzle to deposit the material on the
+								build plate.</dd>
+							<dt><dfn><strong>Functional Prototype</strong></dfn></dt>
+							<dd>The general term given to the material used in FDM. Typically supplied in coils or rolls
+								the filament is heated up and fed through the nozzle to deposit the material on the
+								build plate.</dd>
+							<dt><dfn><strong>FFF (Fused Filament Fabrication)</strong></dfn></dt>
+							<dd>uses a string of solid material (filament), pushing it through a heated nozzle and
+								melting it in the process. The printer continuously moves this nozzle around, laying
+								down the melted material at a precise location, where it instantly cools down and
+								solidifies. This builds up the model layer by layer. The most common 3D printing
+								technology.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="hCollapse" role="tabpanel">h's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="gCollapse" role="tabpanel"> <!--G-->
+						<dl>
+							<dt><dfn><strong>Glass transition temperature</strong></dfn></dt>
+							<dd>The temperature region where a material transitions from a hard, glassy material to a
+								soft, rubbery material.</dd>
+							<dt><dfn><strong>G-code</strong></dfn></dt>
+							<dd>The common name for the most widely used numerical control (NC) programming language. It
+								is used in computer-aided manufacturing to control automated machine tools (like CNC’s
+								and 3D printers).</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="iCollapse" role="tabpanel">i's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="hCollapse" role="tabpanel"> <!--H-->
+						<dl>
+							<dt><dfn><strong>Hollow</strong></dfn></dt>
+							<dd>A 3D print that is not solid and also does not contain any infill. Hollow models are
+								much faster and cheaper to print but have very low strength.</dd>
+							<dt><dfn><strong>Hot End</strong></dfn></dt>
+							<dd>Nozzle part of an extruder which heats the build material and extrudes it to build up
+								the final object.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="jCollapse" role="tabpanel">j's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="iCollapse" role="tabpanel"> <!--I-->
+						<dl>
+							<dt><dfn><strong>Infill</strong></dfn></dt>
+							<dd>A value usually represented in percentage that shows how much a solid model should be
+								filled in with material when printed. 100% infill means the part is completely solid.
+								Infill is used to make 3D printing cheaper and faster.</dd>
+							<dt><dfn><strong>Islands</strong></dfn></dt>
+							<dd>Occur in SLA printing and refer to cross sectional areas of a model that are not
+								connected.</dd>
+							<dt><dfn><strong>Injection molding</strong></dfn></dt>
+							<dd>The process of injecting plastic in a melted liquid form into a die. The plastic fills
+								the empty cavities of the die and cools until it has solidified. The solid plastic part
+								is then ejected from the die and the process is repeated again.</dd>
+							<dt><dfn><strong>Isotropic</strong></dfn></dt>
+							<dd>A material that has the same physical properties in all directions. Glass and metal are
+								common examples of isotropic materials. The opposite to anisotropic.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="kCollapse" role="tabpanel">k's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="jCollapse" role="tabpanel"> <!--J-->
+						<dl>
+							<dt><dfn><strong>Jig</strong></dfn></dt>
+							<dd>A frame used to hold components or parts in a fixed position used in the assembly or
+								manufacturing process.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="lCollapse" role="tabpanel">l's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="kCollapse" role="tabpanel"> <!--K-->
+						<dl>
+							<p>K nothing to see here really!</p>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="mCollapse" role="tabpanel">m's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="lCollapse" role="tabpanel"> <!--L-->
+						<dl>
+							<dt><dfn><strong>Layer height</strong></dfn></dt>
+							<dd>Sometimes called print resolution this is the height of each layer of a 3D print
+								typically measured in microns. Also called layer thickness.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="nCollapse" role="tabpanel">n's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="mCollapse" role="tabpanel"> <!--M-->
+						<dl>
+							<dt><dfn><strong>Melting point</strong></dfn></dt>
+							<dd>The temperature a solid melts or turns into a liquid.</dd>
+							<dt><dfn><strong>Metal printing</strong></dfn></dt>
+							<dd>The process of 3D printing in metal. Objects are created from thin layers of powdered
+								material by selectively sintering or melting it using a high power laser. There are a
+								large range of metal printing technologies.</dd>
+							<dt><dfn><strong>Metal powder</strong></dfn></dt>
+							<dd>The material used for metal printing.</dd>
+							<dt><dfn><strong>Micron</strong></dfn></dt>
+							<dd>A measurement of distance regularly used to describe 3D printing layer height. 1000th of
+								a millimeter. A human hair is approximately 17 microns thick.</dd>
+							<dt><dfn><strong>Model Repositories</strong></dfn></dt>
+							<dd>Digital libraries or storage places for 3D model files.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="oCollapse" role="tabpanel">o's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="nCollapse" role="tabpanel"> <!--N-->
+						<dl>
+							<dt><dfn><strong>Nozzle</strong></dfn></dt>
+							<dd>The part of a 3D printer where the build material is extruded from.</dd>
+							<dt><dfn><strong>Nozzle diameter</strong></dfn></dt>
+							<dd>The diameter of the material that is extruded out of the nozzle. This plays an important
+								role in FDM where shells and walls should be a multiple of nozzle diameter.</dd>
+							<dt><dfn><strong>NURBS (Non-Uniform Rational B-Splines)</strong></dfn></dt>
+							<dd>Mathematical representations of 3D geometry that can accurately describe any shape.</dd>
+							<dt><dfn><strong>Nylon powder</strong></dfn></dt>
+							<dd>A common build material used in the SLS printing process.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="pCollapse" role="tabpanel">p's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="oCollapse" role="tabpanel"> <!--O-->
+						<dl>
+							<dt><dfn><strong>OBJ file</strong></dfn></dt>
+							<dd>A geometry definition file. CAD models are exported as OBJ files then imported into a
+								slicer program. The slicer program then converts the file into G-code to be interpreted
+								by the 3D printer. Similar to .STL files.</dd>
+							<dt><dfn><strong>Offset</strong></dfn></dt>
+							<dd>In 3D printing offset refers to layers that are not printed directly inline with one
+								another and are instead shifted to the side. This is often a printer calibration issue
+								and will impact the quality of a print.</dd>
+							<dt><dfn><strong>Overhang</strong></dfn></dt>
+							<dd>Overhangs occur when a newly printed layer of material is only partially supported by
+								the layer below. Angled walls are considered overhangs and depending on the print
+								technology and angle often require support to print successfully.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="qCollapse" role="tabpanel">q's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="pCollapse" role="tabpanel"> <!--P-->
+						<dl>
+							<dt><dfn><strong>PLA</strong></dfn></dt>
+							<dd>Polylactic acid (PLA) is a thermoplastic polymer commonly used in FDM 3D printing. It is
+								derived from corn starch or sugar cane.</dd>
+							<dt><dfn><strong>Photopolymer</strong></dfn></dt>
+							<dd>A polymer that changes its properties when exposed to light. For 3D printing this
+								generally refers to photopolymers that are in a liquid/resin state and harden when
+								exposed to UV light.</dd>
+							<dt><dfn><strong>Polyjet</strong></dfn></dt>
+							<dd>Similar to inkjet printing, but instead of jetting drops of ink onto paper, jets
+								droplets of liquid photopolymer (in layers) onto a build tray and cures them instantly
+								using UV light. The results are fully cured objects that can be handled and used
+								immediately.</dd>
+							<dt><dfn><strong>Polymer</strong></dfn></dt>
+							<dd>A material whose molecular structure is composed of multiple repeating units. Natural
+								polymeric materials include amber, wool, silk and natural rubber while synthetic
+								polymers include resin, nylon, polystyrene and silicon.</dd>
+							<dt><dfn><strong>Positioning Precision</strong></dfn></dt>
+							<dd>Refers to how precisely the nozzle moves to each designated point in a print.</dd>
+							<dt><dfn><strong>Post processing</strong></dfn></dt>
+							<dd>Any act of improving the appearance or material properties of a 3d print after it has
+								been printed. This covers a large range of processes in 3D printing that vary by
+								technology (support removal, UV curing, heat treating, sanding, tumbling, polishing,
+								painting etc).</dd>
+							<dt><dfn><strong>Print head</strong></dfn></dt>
+							<dd>The part of a 3D printer where material is extruded/jetted from. Is an assembly of
+								multiple components including the nozzle in the case of FDM.</dd>
+							<dt><dfn><strong>Print speed</strong></dfn></dt>
+							<dd>The speed the print head moves around the build plate typically measured in mm/s. 50mm/s
+								is a common speed for desktop FDM printing.</dd>
+							<dt><dfn><strong>Print volume</strong></dfn></dt>
+							<dd>The largest possible dimensions a 3D printer is able to print at. Varies significantly
+								by technology.</dd>
+							<dt><dfn><strong>Prototype</strong></dfn></dt>
+							<dd>An early part or model of a design built before production to test form, function,
+								aesthetics and interaction usually at a low cost. Prototypes are typically items to
+								learn from to improve a design.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="rCollapse" role="tabpanel">r's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="qCollapse" role="tabpanel"> <!--Q-->
+						<dl>
+							<p>Q - Got a question? Why not Contact us below!</p>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="sCollapse" role="tabpanel">s's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="rCollapse" role="tabpanel"> <!--R-->
+						<dl>
+							<dt><dfn><strong>Raft</strong></dfn></dt>
+							<dd>A thick grid with a roof that is added to the base of the part to limit the likelihood
+								of warping occurring. Different to a skirt or brim.</dd>
+							<dt><dfn><strong>Rapid prototyping (RP)</strong></dfn></dt>
+							<dd>The process of creating physical prototypes directly from digital data.</dd>
+							<dt><dfn><strong>Resin</strong></dfn></dt>
+							<dd>A solid or highly viscous substance which is typically converted into a polymer. SLA
+								uses resin exposed to UV light (a lazer) to build a part layer by layer.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="tCollapse" role="tabpanel">t's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="sCollapse" role="tabpanel"> <!--S-->
+						<dl>
+							<dt><dfn><strong>Shell</strong></dfn></dt>
+							<dd>In FDM printing the shell refers to the walls of the print that are exposed to the
+								outside of the model. FDM will print shells at the perimeter of the model and then fill
+								the model with infill. Different to wall thickness.</dd>
+							<dt><dfn><strong>Sintering</strong></dfn></dt>
+							<dd>The process of fusing particles together to form a solid mass of material using heat or
+								pressure without melting it.</dd>
+							<dt><dfn><strong>Skirt</strong></dfn></dt>
+							<dd>A line that is initially printed around the print (but not connected to the print) to
+								clean the nozzle head.</dd>
+							<dt><dfn><strong>SLA</strong></dfn></dt>
+							<dd>Stereolithography (SLA) creates 3D prints out of a liquid (photopolymer) resin,
+								solidifying the material layer by layer using a lazer.</dd>
+							<dt><dfn><strong>Slicer</strong></dfn></dt>
+							<dd>Software required to convert a digital 3D model into machine readable code for the 3D
+								printer. The slicer cuts the model into horizontal layers (slices) and generates the
+								toolpaths needed to fill them.</dd>
+							<dt><dfn><strong>SLS</strong></dfn></dt>
+							<dd>Selective Laser Sintering (SLS) uses a laser to shape and form extremely thin layers of
+								powdered material by melting or sintering it together one layer at a time to create a
+								solid structure.</dd>
+							<dt><dfn><strong>STL file</strong></dfn></dt>
+							<dd>A geometry definition file that uses triangles to describe the surfaces of a 3D model..
+								CAD models are exported as STL files then imported into a slicer program. The slicer
+								program then converts the file into G-code to be interpreted by the 3D printer.</dd>
+							<dt><dfn><strong>Stepping Motor / Stepper Motor</strong></dfn></dt>
+							<dd>A motor capable of very precise small movements, as opposed to the high-speed spinning
+								produced by regular motors. Stepping motors are used to control the position of the
+								print head on each of the x and y axes, while a third stepping motor shuffles the bed
+								down along the z axis after each layer is printed; a fourth stepping motor is used to
+								push the filament through the Bowden cable.</dd>
+							<dt><dfn><strong>Strain</strong></dfn></dt>
+							<dd>Measure of the deformation of the material relative to its original shape measured in
+								mm/mm (or a dimensionless ratio).</dd>
+							<dt><dfn><strong>Stress</strong></dfn></dt>
+							<dd>The internal forces that particles of a material exert on each other measured in
+								Pascals.</dd>
+							<dt><dfn><strong>Subtractive manufacturing</strong></dfn></dt>
+							<dd>Any manufacturing process that removes material to form a final shape (milling, turning
+								etc). The opposite to additive manufacturing (3D printing).</dd>
+							<dt><dfn><strong>Support</strong></dfn></dt>
+							<dd>Support is the extra material that is printed during a 3D print allowing a design with
+								complex geometry to be successfully printed. Support is required to successfully print
+								overhangs and bridges and is removed and discarded in the post processing stage.</dd>
+							<dt><dfn><strong>Surface finish</strong></dfn></dt>
+							<dd>In 3D printing this refers to the roughness of the surface of a 3D printed part.
+								Generally qualitative.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="uCollapse" role="tabpanel">u's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="tCollapse" role="tabpanel"> <!--T-->
+						<dl>
+							<dt><dfn><strong>Tank (resin)</strong></dfn></dt>
+							<dd>The area where resin sits before being cured in the SLA process.</dd>
+							<dt><dfn><strong>Temperature differential</strong></dfn></dt>
+							<dd>The difference in temperature between 2 points. In 3D printing reducing the temperature
+								differential between 2 nearby points reduces the likelihood of warping or deformation.
+							</dd>
+							<dt><dfn><strong>Tensile strength (ultimate)</strong></dfn></dt>
+							<dd>The stress (usually in MPa) at which a material will fracture or break when subjected to
+								a tensile load.</dd>
+							<dt><dfn><strong>Tensile strength (yield)</strong></dfn></dt>
+							<dd>The stress (usually in MPa) at which a material will shift from elastic deformation
+								(returning to its original shape) to plastic deformation (permanent deformation) when
+								subjected to a tensile load.</dd>
+							<dt><dfn><strong>Thermoplastic</strong></dfn></dt>
+							<dd>A plastic material that becomes pliable or moldable above a specific temperature and
+								solidifies upon cooling.</dd>
+							<dt><dfn><strong>Tool Path</strong></dfn></dt>
+							<dd>A series of movements made by the hot end of the extruder.</dd>
+							<dt><dfn><strong>Travel Speed</strong></dfn></dt>
+							<dd>The speed at which the print head moves while it is not extruding any plastic.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="vCollapse" role="tabpanel">v's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="uCollapse" role="tabpanel"> <!--U-->
+						<dl>
+
+							<dt><dfn><strong>UV light</strong></dfn></dt>
+							<dd>For 3D printing this refers to the type of light that is used to cure (harden)
+								photopolymers in SLA and Polyjet 3D printing.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="wCollapse" role="tabpanel">w's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="vCollapse" role="tabpanel"> <!--V-->
+						<dl>
+
+							<dt><dfn><strong>Viscosity</strong></dfn></dt>
+							<dd>Another name for the resistance of flow of a fluid and often used with reference to
+								extruded thermoplastic material.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="xCollapse" role="tabpanel">x's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="wCollapse" role="tabpanel"> <!--W-->
+						<dl>
+							<dt><dfn><strong>Wall thickness</strong></dfn></dt>
+							<dd>Generally associated with minimum wall thickness – the thinnest dimension a wall can be
+								printed at such that it can support the model. Varies by technology. Different from
+								shell thickness.</dd>
+							<dt><dfn><strong>Warping</strong></dfn></dt>
+							<dd>Due to the high heat involved in most 3D printing process differential cooling results
+								in areas of a print cooling at different rates resulting in deformation.</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="yCollapse" role="tabpanel">y's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="xCollapse" role="tabpanel"> <!--X-->
+						<dl>
+							<dt><dfn><strong>X-axis</strong></dfn></dt>
+							<dd>The side to side (left and right) direction relative to the print bed</dd>
+						</dl>
 					</div>
-					<div class="col-sm-12 tab-pane fade mt-3" id="zCollapse" role="tabpanel">z's here
+					<div class="col-sm-12 tab-pane fade mt-3" id="yCollapse" role="tabpanel"> <!--Y-->
+						<dl>
+							<dt><dfn><strong>Y-axis</strong></dfn></dt>
+							<dd>The back to forth direction relative to the print bed.</dd>
+						</dl>
+					</div>
+					<div class="col-sm-12 tab-pane fade mt-3" id="zCollapse" role="tabpanel"> <!--Z-->
+						<dl>
+							<dt><dfn><strong>Z-axis</strong></dfn></dt>
+							<dd>The up and down direction relative to the print bed.</dd>
+						</dl>
 					</div>
 				</div>
-			</div>
+			</div> <!--End A-Z Glossary-->
+        </section>
 		</div>
 	</main>
 	<!--end main-->
@@ -551,4 +965,5 @@
 		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
 	</script>
 </body>
+
 </html>
