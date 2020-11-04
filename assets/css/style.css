@@ -65,6 +65,9 @@ button.close {
     color:#fff;
 }
 
+.depth {
+    box-shadow: 2rem 1rem 3rem rgba(0,0,0,1.5)!important;
+}
 /* Navigation */
 header {
     font-family: 'Roboto', sans-serif;
@@ -74,9 +77,14 @@ header {
     background-image: url(../images/blizzard.png);
 }
 
+.animate {
+    animation: spinner-grow 3s ease-in-out 1;
+}
+
 .sign-up {
     color: #35CE8D!important;
     font-weight: 500;
+    display: inline-block;
 }
 
 div a img {
@@ -177,10 +185,6 @@ div > span, .trans-content {
 div p > span {
     color:#028EAF;
     font-weight: 700;
-}
-
-div p > span:nth-child(7) {
-    color: #35CE8D;
 }
 
 #overlap {
