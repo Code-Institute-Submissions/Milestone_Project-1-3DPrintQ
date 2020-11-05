@@ -97,6 +97,7 @@
 	<!--end navbar-->
 	<main>             
 		<!--main-->
+        <div class="container-fluid mobile-only mobile-head"><div class="row"><div class="col-sm-12"><h1>your guide to 3d printing</h1></div></div></div>
 		<div class="container" id="overlap">
 			<div class="row animate" id="tagline">
 				<div class="col">
@@ -123,7 +124,7 @@
 					</div>
 					<div class="col-sm-8 pt-4 trans-content depth" id="trans-box">
 						<p>
-							<strong>Subscribe</strong> to our <br /><span>Newsletter</span>
+							<strong>Subscribe</strong> to our <br /><span class="expand-text"><strong>Newsletter</strong></span>
 							today to be in<br />
               with a chance to win a free <strong>Webinar</strong> entry!<br />
 							<a class="nav-link sign-up" href="#signupModal" data-toggle="modal">Sign-up</a>Now!
@@ -134,9 +135,9 @@
 			<section>
 				<!--about section-->
 				<header>
-					<div class="container-fluid">
+					<div class="container">
 						<div class="row">
-							<div class="col-sm-2 section-head"><a name="about">About</a></div>
+							<div class="col-sm-2 section-head pl-5 mobile-margin"><a name="about">About</a></div>
 						</div>
 					</div>
 				</header>
@@ -144,7 +145,7 @@
 					<div class="row justify-content-around about">
 						<div class="col-sm-4">
 							<article>
-								<p>
+								<p class="pt-5 pb-4">
 									<span>Welcome to the <strong>3D Print Q!</strong></span>
 									<!--left column-->
 									A place to kick back and learn all about 3D Printing. From
@@ -153,7 +154,7 @@
 									covered. So Q it up and let’s find out.
 								</p>
 								<div class="row justify-content-center">
-									<div class="col-sm-12">
+									<div class="col-sm-12 mb-4">
 										<img
                       src="assets/images/printedobjects.jpg"
                       class="img-fluid rounded img-thumbnail"
@@ -194,22 +195,29 @@
 									<p>We’ll explore all 3 in the build guides below.</p>
 								</aside>
 							</article>
+                            <div class="container-fluid pt-4">
+						<div class="row justify-content-start">
+							<div class="col-sm-6">
+								<figcaption><small class="text-muted">
+										Josef Prusa of Prusa Research</small>
+								</figcaption>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-3" id="figure-img"><img src="assets/images/joeprusa.jpg" class="img-thumbnail"></div>
 						</div>
 					</div>
 				</div>
-				<div class="row justify-content-end">
-					<div class="col-sm-3" id="figure-img"></div>
-				</div>
-				<figcaption class="text-right">
-					Josef Prusa of Prusa Research
-				</figcaption>
+						</div>
+					</div>
+					
 			</section>
 			<!--end about section-->
 			<section>
 				<header>
-					<div class="container-fluid">
+					<div class="container mt-5 pt-5">
 						<div class="row">
-							<div class="col-sm-2 section-head">Build</div>
+							<div class="col-sm-2 section-head pl-5">Build</div>
 						</div>
 					</div>
 				</header>
@@ -271,20 +279,22 @@
               /></a>
 					</div>
 					<!--contact details-->
-					<div class="col-sm-6 d-flex align-items-center justify-content-center">
+					<div class="col-sm-6 d-flex justify-content-center">
 						<address>
-							<h2>
-								<a href="https://goo.gl/maps/xxrJihnrqXCQjTNB7" target="_blank">Address:</a>
-							</h2>
+							<h3>
+								Address:
+							</h3>
+                            <a href="https://goo.gl/maps/xxrJihnrqXCQjTNB7" target="_blank">
 							<p>Bravo Digital Designs,</p>
 							<p>Cork.</p>
 							<p>Ireland</p>
+                            </a>
 						</address>
 					</div>
-					<div class="col-sm-6 d-flex align-items-center justify-content-center">
+					<div class="col-sm-6 d-flex justify-content-center">
 						<address>
-							<h2><a href="mailto:bdigital@design.com">Email:</a></h2>
-							<p>BDigital@designs.com</p>
+							<h3>Email:</h3>
+							<p><a href="mailto:bdigital@design.com" target="_blank">BDigital@designs.com</a></p>
 						</address>
 					</div>
 					<!--Social-->
