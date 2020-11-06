@@ -309,6 +309,18 @@ a[title="3D Printing - Wikipedia"],a[title="Prusa Face Shields"],a[title="Benchs
 }
 /*build page*/
 
+.btn-caribou, .btn-caribou:hover {
+    color: #fff;
+    background-color: #35ce8d;
+    border-color: #35ce8d;
+}
+
+.btn-prusa, .btn-prusa:hover {
+    color: #fff;
+    background-color: #ff785a;
+    border-color: #ff785a;
+}
+
 pre {
     white-space: pre-wrap;
     font-family: 'Source Sans Pro', sans-serif!important;
@@ -412,3 +424,11 @@ ul{
 .not-sticky {
     position: inherit!important;
 }
+
+/*hover css*/
+
+.hvr-underline-from-center:before {
+    background: #FF785A!important;
+    height: 2px!important;
+}
+
