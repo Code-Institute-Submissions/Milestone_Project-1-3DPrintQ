@@ -343,6 +343,21 @@ th ~ td {
 .nav-tabs {
     border-bottom: 0px;
 }
+
+.green-bg {
+    color: #fff;
+    background-color: #35ce8d;
+}
+
+.orange-bg {
+    color: #fff;
+    background-color: #ff785a;
+}
+
+.red-bg {
+    color: #fff;
+    background-color: #dc3545;
+}
 /*footer*/
 footer {
     background-image: url(../images/blizzard.png);
