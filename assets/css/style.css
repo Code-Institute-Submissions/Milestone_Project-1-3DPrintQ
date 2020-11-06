@@ -93,10 +93,6 @@ header {
     background-image: url(../images/blizzard.png);
 }
 
-.animate {
-    animation: spinner-grow 3s ease-in-out 1;
-}
-
 .sign-up {
     color: #35CE8D!important;
     font-weight: 500;
@@ -223,7 +219,7 @@ div > span, .trans-content {
 #hero-image {
     margin-top: 10rem;
     width:100%;
-    border: 2px solid #028eaf;
+    border: 2px solid #4c4c47;
 }
 
 #figure-img {
@@ -253,7 +249,7 @@ div > span, .trans-content {
     color:#fff;
     text-align: right;
     font-weight:400;
-    border: 2px solid #FF785A;
+    border: 2px solid #4c4c47;
 }
 
 #bg-box {
@@ -264,7 +260,7 @@ div > span, .trans-content {
     top: 372px;
     right: 50px;
     position: absolute;
-    border: 2px solid #35CE8D;
+    border: 2px solid #4c4c47;
 }
 
 .section-head{
@@ -425,10 +421,52 @@ ul{
     position: inherit!important;
 }
 
-/*hover css*/
+/*Animations*/
 
 .hvr-underline-from-center:before {
     background: #FF785A!important;
     height: 2px!important;
 }
 
+@keyframes slide-l {
+  from {left: -60vw;}
+  to {left: 0vw;border: 2px solid #028EAF}
+}
+
+@keyframes slide-r {
+  from {right: -50vw;}
+  to {right: 50px;border: 2px solid #35CE8D}
+}
+
+@keyframes slide-b {
+  from {top: 100vh;}
+  to {top: 456px;border: 2px solid #ff785a;}
+}
+
+.slide-left {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: slide-l 3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.slide-right {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: slide-r 3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.slide-btm {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: slide-b 3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.animate {
+    animation: spinner-grow 6s ease-in-out 1;
+}
