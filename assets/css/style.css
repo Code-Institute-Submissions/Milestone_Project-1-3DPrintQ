@@ -393,6 +393,10 @@ span.fas {
     color: #fff;
 }
 
+h2 span.fas {
+    color: #35ce8d;
+}
+
 .form{
     margin-top: 2px;
     margin-bottom: 2px;
