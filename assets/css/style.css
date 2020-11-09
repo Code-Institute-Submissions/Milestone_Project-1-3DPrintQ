@@ -11,7 +11,7 @@ main {
     font-family: 'Roboto',sans-serif;
     letter-spacing: 0.25em;
     background: #fff;
-    min-height: 75vh;
+    min-height: 95vh;
     position: relative;
     z-index: 1; /*for slide-out footer*/
 }
@@ -167,6 +167,12 @@ footer {
 @media only screen and (max-width:812px) {
 .mobile-margin {
     margin-top: auto!important;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+.mobile-media {
+    display: block!important;
     }
 }
 
