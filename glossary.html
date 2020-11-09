@@ -949,16 +949,19 @@
 			<!--contact form-->
 			<div class="col-sm-4 form bdr-left">
 				<h2>Contact us!</h2>
-				<form>
+				<form method="POST" action="https://formdump.codeinstitute.net/">
 					<p>Got something to add?<br />We’d <em>love</em> to hear!</p>
 					<div class="form-row form-group text-center col-auto">
-						<input type="text" class="form-control" placeholder="Your Name" />
+						<input type="text" class="form-control" placeholder="Your Name" name="full_name" id="fname" required />
             </div>
 						<div class="form-row form-group text-center col-auto">
 							<input
                 type="email"
                 class="form-control"
                 placeholder="Your Email Address"
+                name="email_address"
+                id="email"
+                required
                 aria-describedby="emailHelp"
               />
 							<small id="emailHelp" class="form-text text-muted"
@@ -969,6 +972,9 @@
                 class="form-control"
                 rows="2"
                 placeholder="Your Message"
+                name="your_message"
+                id="message"
+                required
               ></textarea>
 						</div>
 						<div
@@ -977,15 +983,14 @@
                 type="checkbox"
                 class="form-check-input"
                 id="newsletter-check"
+                name="newsletter"
                 checked
               />
 							<label class="form-check-label" for="newsletter-check"
                 >Add me to the mailing list!</label>
 						</div>
 						<div class="form-row form-group justify-content-center col-auto">
-							<button type="button" class="btn btn-outline-primary">
-                Submit
-              </button>
+							<input type="submit" class="btn btn-outline-primary">
 						</div>
 				</form>
 			</div>
