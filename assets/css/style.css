@@ -19,7 +19,7 @@ main {
 
 .content {
     font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 5px;
+    letter-spacing: 0.3125em;
 }
 
 .padding {
@@ -180,7 +180,7 @@ dt {
 }
 
 .depth {
-    box-shadow: 2rem 1rem 3rem rgba(0,0,0,1.5)!important;
+    box-shadow: 2rem 1rem 3rem rgba(0,0,0,0.9)!important;
 }
 
 .green-bg {
@@ -209,13 +209,11 @@ blockquote span:last-child {
 .btn-caribou, .btn-caribou:hover {
     color: #fff;
     background-color: #35ce8d;
-    border-color: #35ce8d;
 }
 
 .btn-prusa, .btn-prusa:hover {
     color: #fff;
     background-color: #ff785a;
-    border-color: #ff785a;
 }
 
 a[title="3D Printing - Wikipedia"],a[title="Prusa Face Shields"],a[title="Benchspace Cork"]{
@@ -226,7 +224,7 @@ a[title="3D Printing - Wikipedia"],a[title="Prusa Face Shields"],a[title="Benchs
 
 header {
     font-family: 'Roboto', sans-serif;
-    letter-spacing: 5px;
+    letter-spacing: 0.3125em;
 }
 .navbar{
     background-image: url(../images/blizzard.png);
@@ -397,12 +395,12 @@ a:not([href]):not([class]) {
     text-decoration: inherit;
 }
 
-.img-thumbnail, {
+.img-thumbnail {
     margin-bottom:25px;
 }
 
 .media {
-    width: -webkit-fill-available;
+    width: auto;
     border-top-width: 0px;
     border-right-width: 0px;
     border-bottom-width: 0px;
@@ -423,7 +421,7 @@ a:not([href]):not([class]) {
 pre {
     white-space: pre-wrap;
     font-family: 'Source Sans Pro', sans-serif!important;
-    letter-spacing: 5px;
+    letter-spacing: 0.3125em;
 }
 
 table td, table th {
