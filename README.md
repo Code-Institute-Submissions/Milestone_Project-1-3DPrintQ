@@ -53,6 +53,8 @@
     - [Acknowledgements](#acknowledgements "Acknowledgements")  
     </details>
 # Milestone Project 1
+![GitHub top language](https://img.shields.io/github/languages/top/LogisticBravo/Milestone_Project-1-3DPrintQ) <img src="https://img.shields.io/badge/CSS%20Coverage-3.8%25-yellow"> <img src="https://img.shields.io/badge/Deployment-Success-lightgrey"> <img src="https://img.shields.io/badge/Bootstrap-V4.5.3-blueviolet"> <img src="https://img.shields.io/badge/FontAwesome-V5.15.1-blue">   
+![GitHub language count](https://img.shields.io/github/languages/count/LogisticBravo/Milestone_Project-1-3DPrintQ) ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/LogisticBravo/Milestone_Project-1-3DPrintQ) ![GitHub last commit (branch)](https://img.shields.io/github/last-commit/LogisticBravo/Milestone_Project-1-3DPrintQ/master) ![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Flogisticbravo.github.io%2FMilestone_Project-1-3DPrintQ%2F) ![GitHub forks](https://img.shields.io/github/forks/LogisticBravo/Milestone_Project-1-3DPrintQ?style=social)
 
 This was created to demonstrate learnings from the Code Institute software development course and marks the first of four milestone projects to be created. It is to showcase html, css and ux by way of a static front end website.
 
@@ -99,10 +101,10 @@ As branding is alway important, the brand logo is used within the header and the
 
 ## Features
 * The site is designed to be responsive across all devices.
+* The home page features a slick animation when viewed on a desktop.
 * The home page uses a carousel feature for the 3 build guides. Their runs and cycles through each option automatically, denotes which one is in view and also allows the user to navigate back and forth. The carousel is also responsive and so works on mobile and tablets.
 * All YouTube videos are embedded and can be play/paused by the user. As with all podcasts. 
 * The footer is partially visible as you scroll to the bottom and fully reveals itself once the bottom of the page is reached.
-* The user can jump back to the top of the page by hitting the “raise Live Z’ button.
 * Sign-up opens the sign-up modal. 
 
 ## Technologies Used
@@ -144,26 +146,45 @@ freephototool.com was used to create the ‘3DPrintQ’ logo and it’s negative
 
 ## Testing
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-* W3C Markup Validator - Results link here
-* W3C CSS Validator - Results link here
-
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
+<p>
+<a href="https://validator.w3.org/">
+<img style="border:0;width:88px;height:31px"
+        src="https://www.w3.org/Icons/valid-html401-blue"
+        alt="Valid HTML!" /> 
+        </a>
+</p> 
 All links have been extensively tested to ensure correct continuity.
 
 ### Testing User Stories from User Experience (UX)
 #### First Time Visitor Goals
+* The site has a clear 'About' section which provides insight to it's purpose and infrmation that users are looking for.
+* The site has a clear well thought out structure that is familiar to the user and the site itself guides you to each section. All navigation links were also extensively tested to ensure continuity.
+* The site is fully responsive across Desktops, tablets and mobile devices and was tested using Chrome Developer tools on Ipad, Ipad Pro, Iphone 6,7,8 X, Xiaomi F2, Xiamoi F1, Mac pro, MacBook and Safari.
 
 #### Returning Visitor Goals
+* There is additional information to external resources by way of podcasts and videos. These do not auto play and can be played by the user across all devices and all work correctly.
+* There is a specific 'Contact Us' section located in the footer as well as an email address also. Clicking the email address will open up a users email client and the contact us form has been tested extensively and returns a confirmation page that the form was submiited successfully.
+* All social media links are housed within the footer and have all been tested.
 
 #### Frequent User Goals
+*  User's are prompted a number of times to sign-up to the Newsletter which will keep them up to date with podcasts and videos, blog posts, articles and any other relevant information. The Newsletter modal has been tested extensively and returns a confirmation page that the form was submiited successfully.
 
 #### Further Testing
 
 #### Known Bugs
+* No known bugs.
 
 ## Deployment
 
 #### Using Github Pages
-![Image](mdimages/deploy.gif)  
+![Image](mdimages/deployment.gif)  
 1. Navigate to the GitHub Repository:[3DPrintQ](https://github.com/LogisticBravo/Milestone_Project-1-3DPrintQ)
 2. Click the 'Settings' Tab.
 3. Scroll Down to the Git Hub Pages Heading.
