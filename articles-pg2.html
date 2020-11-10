@@ -28,21 +28,24 @@
       </div>
       <div class="modal-body">
         Signing up to our Newsletter keeps you up to date with all the latest news and grants you discounts with our partners!
-        <form>
+        <form method="POST" action="https://formdump.codeinstitute.net/">
         <div class="form-row form-group text-center col-auto pt-4">
-						<input type="text" class="form-control" placeholder="Name" />
+						<input type="text" class="form-control" placeholder="Name" name="full_name" id="fullname" required/>
             </div>
 		<div class="form-row form-group text-center col-auto pb-4">
 							<input
                 type="email"
                 class="form-control"
                 placeholder="Email"
+                name="email"
+                id="emailaddress"
+                required
               />
       </div>
-      </form>
       <div class="modal-footer justify-content-center">
-        <button type="button" class="btn sign-up"><h4>Sign Me Up!</h4></button>
+        <input type="submit" class="btn sign-up" value="Sign Me Up!">
       </div>
+      </form>
     </div>
     </div>
     </div>
