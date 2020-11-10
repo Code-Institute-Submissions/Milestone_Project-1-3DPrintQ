@@ -401,8 +401,12 @@ a:not([href]):not([class]) {
     margin-bottom:25px;
 }
 
-.you-tube {
+.media {
     width: -webkit-fill-available;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
 }
 
 #build-carousel {
