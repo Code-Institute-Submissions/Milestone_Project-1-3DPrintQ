@@ -1,390 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-	<!--bootstrap cdn-->
-	<script src="https://kit.fontawesome.com/35a878bce2.js" crossorigin="anonymous"></script>
-	<!--fontawesome import-->
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <!--hover.css stylesheet import-->
-    <link href="assets/css/hover-min.css" rel="stylesheet">
-</head>
-
-<body>
-<!-- Sign up Modal -->
-<div class="modal fade" id="signupModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered row justify-content-center">
-    <div class="modal-content col-sm-8 content trans-modal">
-      <div class="modal-header">
-        <h4 class="modal-title" id="signupModalLabel"><strong>Newsletter</strong></h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Signing up to our Newsletter keeps you up to date with all the latest news and grants you discounts with our partners!
-        <form method="POST" action="https://formdump.codeinstitute.net/">
-        <div class="form-row form-group text-center col-auto pt-4">
-						<input type="text" class="form-control" placeholder="Name" name="full_name" id="fullname" required/>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+        <!---------------------- bootstrap cdn ---------------------->
+        <script src="https://kit.fontawesome.com/35a878bce2.js" crossorigin="anonymous"></script>
+        <!---------------------- fontawesome import ---------------------->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <!---------------------- hover.css stylesheet import ---------------------->
+        <link href="assets/css/hover-min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!---------------------- Sign up Modal ---------------------->
+        <div class="modal fade" id="signupModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered row justify-content-center">
+                <div class="modal-content col-sm-8 content trans-modal">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="signupModalLabel"><strong>Newsletter</strong></h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Signing up to our Newsletter keeps you up to date with all the latest news and grants you discounts with our partners!
+                        <form method="POST" action="https://formdump.codeinstitute.net/">
+                            <div class="form-row form-group text-center col-auto pt-4">
+                                <input type="text" class="form-control" placeholder="Name" name="full_name" id="fullname" required/>
+                            </div>
+                            <div class="form-row form-group text-center col-auto pb-4">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Email"
+                                    name="email"
+                                    id="emailaddress"
+                                    required
+                                    />
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <input type="submit" class="btn sign-up" value="Sign Me Up!">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-		<div class="form-row form-group text-center col-auto pb-4">
-							<input
-                type="email"
-                class="form-control"
-                placeholder="Email"
-                name="email"
-                id="emailaddress"
-                required
-              />
-      </div>
-      <div class="modal-footer justify-content-center">
-        <input type="submit" class="btn sign-up" value="Sign Me Up!">
-      </div>
-      </form>
-    </div>
-    </div>
-    </div>
-</div> <!-- End Sign up Modal-->
-	<header>
-		<!--Bootstrap navbar-->
-		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-			<div class="container-fluid">
-				<a href="#" class="navbar-brand">
-					<img src="assets/images/logowhite.svg" alt="" />
-          </a>
-					<button
-            class="navbar-toggler ml-auto"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item active">
-								<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#about">About</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link hvr-underline-from-center" href="builds.html">Builds</a>
-							</li>
-							<li class="nav-item dropdown mr-auto">
-								<a class="nav-link btn dropdown-toggle hvr-underline-from-center" href="#" id="navbarDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Resources
-								</a>
-								<div class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item hvr-underline-from-center" href="podcasts-and-videos.html">Podcasts & Videos</a>
-									<a class="dropdown-item hvr-underline-from-center" href="articles.html">Articles</a>
-									<a class="dropdown-item hvr-underline-from-center" href="glossary.html">Glossary</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link sign-up hvr-grow" href="#signupModal" data-toggle="modal">Sign-up</a>
-							</li>
-						</ul>
-					</div>
-			</div>
-		</nav>
-	</header>
-	<!--end navbar-->
-	<main>             
-		<!--main-->
-        <div class="container-fluid mobile-only mobile-head"><div class="row"><div class="col-sm-12"><h1>your guide to 3d printing</h1></div></div></div>
-		<div class="container" id="overlap">
-			<div class="row animate" id="tagline">
-				<div class="col">
-					<blockquote>
-						<em
-                >Everybody<br />
-                is a<br /><span>maker<br /></span> only I have<br />a
-                <span>printq</span></em>
-					</blockquote>
-				</div>
-			</div>
-			<div class="row align-items-center">
-				<div class="col-sm-8">
-					<img
-              src="assets/images/hero-image.png"
-              id="hero-image"
-              alt="hero-image of 3d printed objects"
-              class="depth slide-left"
-            />
-          </div>
-
-					<div class="col-sm-4 col-md-6 text-center depth slide-right" id="bg-box">
-						<span>Your guide to 3D printing!</span>
-					</div>
-					<div class="col-sm-8 pt-4 trans-content depth slide-btm" id="trans-box">
-						<p>
-							<strong>Subscribe</strong> to our <br /><span class="expand-text"><strong>Newsletter</strong></span>
-							today to be in<br />
-              with a chance to win a free <strong>Webinar</strong> entry!<br />
-							<a class="nav-link sign-up" href="#signupModal" data-toggle="modal">Sign-up</a>Now!
-						</p>
-					</div>
-				</div>
-			</div>
-			<section>
-				<!--about section-->
-				<header>
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-2 section-head pl-5 mobile-margin"><a name="about">About</a></div>
-						</div>
-					</div>
-				</header>
-				<div class="container-fluid relative">
-					<div class="row justify-content-around about">
-						<div class="col-sm-4">
-							<article>
-								<p class="pt-5 pb-4">
-									<h3><span>Welcome to the <strong>3D Print Q!</strong></span></h3>
-									<!--left column-->
-									A place to kick back and learn all about 3D Printing. From
-									what it is to the best podcasts to listen to and video’s to
-									watch and some of the greatest builds around. We’ve got you
-									covered. So Q it up and let’s find out.
-								</p>
-								<div class="row justify-content-center">
-									<div class="col-sm-12 mb-4">
-										<img
-                      src="assets/images/printedobjects.jpg"
-                      class="img-fluid rounded img-thumbnail"
-                      alt="image of 3d printed objects"
-                    />
-                  </div>
-									</div>
-							</article>
-						</div>
-						<div class="col-sm-6">
-							<article>
-								<aside>
-									<h2>What is 3D Printing?</h2>
-									<!--right column-->
-									<p>
-										As per
-										<a href="https://en.wikipedia.org/wiki/3D_printing" target="_blank"
-											title="3D Printing - Wikipedia">Wikipedia</a>:<cite title="3D printing">
-                      3D printing, or additive manufacturing, is the
-                      construction of a three-dimensional object from a CAD
-                      model or a digital 3D model.The term "3D printing" can
-                      refer to a variety of processes in which material is
-                      deposited, joined or solidified under computer control to
-                      create a three-dimensional object, with material being
-                      added together (such as liquid molecules or powder grains
-                      being fused together), typically layer by layer.</cite>
-									</p>
-									<p>
-										In the late naughties, 2009, the patent for Fused Deposition
-										Modelling (FDM) expired and became sensationally
-										poopularised by the now Godfather of consumer 3D printing,
-										Josef Prusa of Prusa Research. With Prusa’s open source and
-										open hardware mentality, the i3 MK line of printers have
-										become the most commercially popularised printer and out of
-										it, other flavours were created, namely the Caribou and Bear
-										builds.
-									</p>
-									<p>We’ll explore all 3 in the build guides below.</p>
-								</aside>
-							</article>
-                            <div class="container-fluid pt-4">
-						<div class="row justify-content-start">
-							<div class="col-sm-6">
-								<figcaption><small class="text-muted">
-										Josef Prusa of Prusa Research</small>
-								</figcaption>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-sm-3" id="figure-img"><img src="assets/images/joeprusa.jpg" class="img-thumbnail"></div>
-						</div>
-					</div>
-				</div>
-						</div>
-					</div>
-					
-			</section>
-			<!--end about section-->
-			<section>
-				<header>
-					<div class="container mt-5 pt-5">
-						<div class="row">
-							<div class="col-sm-2 section-head pl-5">Build</div>
-						</div>
-					</div>
-				</header>
-				<!--build carousel-->
-				<div class="container">
-					<div id="build-carousel" class="carousel slide" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#build-carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#build-carousel" data-slide-to="1"></li>
-							<li data-target="#build-carousel" data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="assets/images/prusabuild.png" class="d-block w-100" alt="Prusa 3D Printer">
-								<div class="carousel-caption d-none d-md-block text-secondary">
-									<a href="builds.html">
-                                    <h5>Prusa</h5>
-									<p>The Original i3, build the Mk3S</p>
-                                    </a>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img src="assets/images/caribou320build.png" class="d-block w-100" alt="Caribou 3D Printer">
-								<div class="carousel-caption d-none d-md-block text-secondary">
-                                <a href="builds.html">
-									<h5>Caribou 320</h5>
-									<p>The taller one with 100mm extra Z</p>
-                                    </a>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<img src="assets/images/bearbuild.png" class="d-block w-100" alt="Bear 3D Printer">
-								<div class="carousel-caption d-none d-md-block">
-                                <a href="builds.html">
-									<h5>Bear</h5>
-									<p>Build-a-bear. The Original remix</p>
+        </div>
+        <!---------------------- End Sign up Modal ---------------------->
+        <header>
+            <!---------------------- fully custom navbar utilising bootstrap ---------------------->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                    <img src="assets/images/logowhite.svg" alt="" />
+                    </a>
+                    <button
+                        class="navbar-toggler ml-auto"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        >
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="builds.html">Builds</a>
+                            </li>
+                            <li class="nav-item dropdown mr-auto">
+                                <a class="nav-link btn dropdown-toggle hvr-underline-from-center" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Resources
                                 </a>
-								</div>
-							</div>
-						</div>
-						<a class="carousel-control-prev" href="#build-carousel" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#build-carousel" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-					</div>
-				</div>
-			</section>
-			<!--end build carousel-->
-	</main>
-	<!--end main-->
-	<!--footer with logo-->
-	<footer class="container-fluid bg-dark">
-		<div class="row">
-			<div class="col-sm-8 d-flex justify-content-between">
-				<div class="row">
-					<div class="col-sm-12 p-2 d-flex justify-content-start align-items-center">
-						<a href="#"><img
-                  src="assets/images/logowhite.svg"
-                  alt=""
-                  class="mx-auto d-block"
-              /></a>
-					</div>
-					<!--contact details-->
-					<div class="col-sm-6 d-flex justify-content-center">
-						<address>
-							<h3 class="hvr-icon-pulse-grow">
-								Address <span class="fas fa-map-pin hvr-icon"></span>
-							</h3>
-                            <a href="https://goo.gl/maps/xxrJihnrqXCQjTNB7" target="_blank">
-							<p>Bravo Digital Designs,</p>
-							<p>Cork.</p>
-							<p>Ireland</p>
-                            </a>
-						</address>
-					</div>
-					<div class="col-sm-6 d-flex justify-content-center">
-						<address>
-							<h3 class="hvr-icon-grow-rotate">Email <span class="fas fa-paper-plane hvr-icon"></span></h3>
-							<p><a href="mailto:bdigital@design.com" target="_blank">BDigital@designs.com</a></p>
-						</address>
-					</div>
-					<!--Social-->
-					<div class="col-sm-12 d-flex align-items-end justify-content-center bdr-top">
-						<h6 class="text-muted">Socialise with us!</h6>
-					</div>
-					<div class="col p-2 d-flex justify-content-around align-items-center">
-						<!--use <span> for font awesome icons as more semantically correct-->
-						<a href="https://www.facebook.com/"
-							target="_blank"><span class="fab fa-facebook-square"></span></a>
-						<a href="https://www.instagram.com/"
-							target="_blank"><span class="fab fa-instagram-square"></span></a>
-						<a href="https://www.pinterest.com/"
-							target="_blank"><span class="fab fa-pinterest-square"></span></a>
-						<a href="https://www.twitter.com/"
-							target="_blank"><span class="fab fa-twitter-square"></span></a>
-						<a href="https://www.youtube.com/"
-							target="_blank"><span class="fab fa-youtube-square"></span></a>
-					</div>
-				</div>
-			</div>
-			<!--contact form-->
-			<div class="col-sm-4 form bdr-left">
-				<h2>Contact us!</h2>
-				<form method="POST" action="https://formdump.codeinstitute.net/">
-					<p>Got something to add?<br />We’d <em>love</em> to hear!</p>
-					<div class="form-row form-group text-center col-auto">
-						<input type="text" class="form-control" placeholder="Your Name" name="full_name" id="fname" required />
+                                <div class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item hvr-underline-from-center" href="podcasts-and-videos.html">Podcasts & Videos</a>
+                                    <a class="dropdown-item hvr-underline-from-center" href="articles.html">Articles</a>
+                                    <a class="dropdown-item hvr-underline-from-center" href="glossary.html">Glossary</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link sign-up hvr-grow" href="#signupModal" data-toggle="modal">Sign-up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!---------------------- end navbar ---------------------->
+        <main>
+            <!---------------------- main ---------------------->
+            <div class="container-fluid mobile-only mobile-head">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>your guide to 3d printing</h1>
+                    </div>
+                </div>
             </div>
-						<div class="form-row form-group text-center col-auto">
-							<input
-                type="email"
-                class="form-control"
-                placeholder="Your Email Address"
-                name="email_address"
-                id="email"
-                required
-                aria-describedby="emailHelp"
-              />
-							<small id="emailHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small>
-						</div>
-						<div class="form-row form-group text-center col-auto">
-							<textarea
-                class="form-control"
-                rows="2"
-                placeholder="Your Message"
-                name="your_message"
-                id="message"
-                required
-              ></textarea>
-						</div>
-						<div
-							class="form-row form-group col-auto d-flex justify-content-start align-items-center text-center">
-							<input
-                type="checkbox"
-                class="form-check-input"
-                id="newsletter-check"
-                name="newsletter"
-                checked
-              />
-							<label class="form-check-label" for="newsletter-check"
-                >Add me to the mailing list!</label>
-						</div>
-						<div class="form-row form-group justify-content-center col-auto">
-							<input type="submit" class="btn btn-outline-primary">
-						</div>
-				</form>
-			</div>
-		</div>
-	</footer>
-	<!--end footer-->
-	<!--bootstrap script-->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-	</script>
-</body>
-
+            <div class="container" id="overlap">
+                <div class="row animate" id="tagline">
+                    <div class="col">
+                        <blockquote>
+                            <em
+                                >Everybody<br />
+                            is a<br /><span>maker<br /></span> only I have<br />a
+                            <span>printq</span></em>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-sm-8">
+                        <img
+                            src="assets/images/hero-image.png"
+                            id="hero-image"
+                            alt="hero-image of 3d printed objects"
+                            class="depth slide-left"
+                            />
+                    </div>
+                    <div class="col-sm-4 col-md-6 text-center depth slide-right" id="bg-box">
+                        <span>Your guide to 3D printing!</span>
+                    </div>
+                    <div class="col-sm-8 pt-4 trans-content depth slide-btm" id="trans-box">
+                        <p>
+                            <strong>Subscribe</strong> to our <br /><span class="expand-text"><strong>Newsletter</strong></span>
+                            today to be in<br />
+                            with a chance to win a free <strong>Webinar</strong> entry!<br />
+                            <a class="nav-link sign-up" href="#signupModal" data-toggle="modal">Sign-up</a>Now!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <!---------------------- about section ---------------------->
+                <header>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-2 section-head pl-5 mobile-margin"><a name="about">About</a></div>
+                        </div>
+                    </div>
+                </header>
+                <div class="container-fluid relative">
+                    <div class="row justify-content-around about">
+                        <div class="col-sm-4">
+                            <article>
+                                <p class="pt-5 pb-4">
+                                <h3><span>Welcome to the <strong>3D Print Q!</strong></span></h3>
+                                <!---------------------- left about column ---------------------->
+                                A place to kick back and learn all about 3D Printing. From
+                                what it is to the best podcasts to listen to and video’s to
+                                watch and some of the greatest builds around. We’ve got you
+                                covered. So Q it up and let’s find out.
+                                </p>
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-12 mb-4">
+                                        <img
+                                            src="assets/images/printedobjects.jpg"
+                                            class="img-fluid rounded img-thumbnail"
+                                            alt="image of 3d printed objects"
+                                            />
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6">
+                            <article>
+                                <aside>
+                                    <h2>What is 3D Printing?</h2>
+                                    <!---------------------- right about column ---------------------->
+                                    <p>
+                                        As per
+                                        <a href="https://en.wikipedia.org/wiki/3D_printing" target="_blank"
+                                            title="3D Printing - Wikipedia">Wikipedia</a>:<cite title="3D printing">
+                                        3D printing, or additive manufacturing, is the
+                                        construction of a three-dimensional object from a CAD
+                                        model or a digital 3D model.The term "3D printing" can
+                                        refer to a variety of processes in which material is
+                                        deposited, joined or solidified under computer control to
+                                        create a three-dimensional object, with material being
+                                        added together (such as liquid molecules or powder grains
+                                        being fused together), typically layer by layer.</cite>
+                                    </p>
+                                    <p>
+                                        In the late naughties, 2009, the patent for Fused Deposition
+                                        Modelling (FDM) expired and became sensationally
+                                        poopularised by the now Godfather of consumer 3D printing,
+                                        Josef Prusa of Prusa Research. With Prusa’s open source and
+                                        open hardware mentality, the i3 MK line of printers have
+                                        become the most commercially popularised printer and out of
+                                        it, other flavours were created, namely the Caribou and Bear
+                                        builds.
+                                    </p>
+                                    <p>We’ll explore all 3 in the build guides below.</p>
+                                </aside>
+                            </article>
+                            <div class="container-fluid pt-4">
+                                <div class="row justify-content-start">
+                                    <div class="col-sm-6">
+                                        <figcaption><small class="text-muted">
+                                            Josef Prusa of Prusa Research</small>
+                                        </figcaption>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3" id="figure-img"><img src="assets/images/joeprusa.jpg" class="img-thumbnail"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!---------------------- end about section ---------------------->
+            <section>
+                <header>
+                    <div class="container mt-5 pt-5">
+                        <div class="row">
+                            <div class="col-sm-2 section-head pl-5">Build</div>
+                        </div>
+                    </div>
+                </header>
+                <!---------------------- build carousel ---------------------->
+                <div class="container">
+                    <div id="build-carousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#build-carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#build-carousel" data-slide-to="1"></li>
+                            <li data-target="#build-carousel" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <!---------------------- Prusa Carousel ---------------------->
+                                <img src="assets/images/prusabuild.png" class="d-block w-100" alt="Prusa 3D Printer"> 
+                                <div class="carousel-caption d-none d-md-block text-secondary">
+                                    <a href="builds.html">
+                                        <h5>Prusa</h5>
+                                        <p>The Original i3, build the Mk3S</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!---------------------- Caribou Carousel ---------------------->
+                                <img src="assets/images/caribou320build.png" class="d-block w-100" alt="Caribou 3D Printer"> 
+                                <div class="carousel-caption d-none d-md-block text-secondary">
+                                    <a href="builds.html">
+                                        <h5>Caribou 320</h5>
+                                        <p>The taller one with 100mm extra Z</p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <!---------------------- Bear Carousel ---------------------->
+                                <img src="assets/images/bearbuild.png" class="d-block w-100" alt="Bear 3D Printer">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <a href="builds.html">
+                                        <h5>Bear</h5>
+                                        <p>Build-a-bear. The Original remix</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#build-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#build-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!---------------------- end build carousel ---------------------->
+        </main>
+        <!---------------------- end main ---------------------->
+        <!---------------------- footer with logo ---------------------->
+        <footer class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-sm-8 d-flex justify-content-between">
+                    <div class="row">
+                        <div class="col-sm-12 p-2 d-flex justify-content-start align-items-center">
+                            <a href="#"><img
+                                src="assets/images/logowhite.svg"
+                                alt=""
+                                class="mx-auto d-block"
+                                /></a>
+                        </div>
+                        <!---------------------- contact details ---------------------->
+                        <div class="col-sm-6 d-flex justify-content-center">
+                            <address>
+                                <h3 class="hvr-icon-pulse-grow">
+                                    Address <span class="fas fa-map-pin hvr-icon"></span>
+                                </h3>
+                                <a href="https://goo.gl/maps/xxrJihnrqXCQjTNB7" target="_blank">
+                                    <p>Bravo Digital Designs,</p>
+                                    <p>Cork.</p>
+                                    <p>Ireland</p>
+                                </a>
+                            </address>
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-center">
+                            <address>
+                                <h3 class="hvr-icon-grow-rotate">Email <span class="fas fa-paper-plane hvr-icon"></span></h3>
+                                <p><a href="mailto:bdigital@design.com" target="_blank">BDigital@designs.com</a></p>
+                            </address>
+                        </div>
+                        <!---------------------- Social ---------------------->
+                        <div class="col-sm-12 d-flex align-items-end justify-content-center bdr-top">
+                            <h6 class="text-muted">Socialise with us!</h6>
+                        </div>
+                        <div class="col p-2 d-flex justify-content-around align-items-center">
+                            <!---------------------- use <span> for font awesome icons as more semantically correct ---------------------->
+                            <a href="https://www.facebook.com/"
+                                target="_blank"><span class="fab fa-facebook-square"></span></a>
+                            <a href="https://www.instagram.com/"
+                                target="_blank"><span class="fab fa-instagram-square"></span></a>
+                            <a href="https://www.pinterest.com/"
+                                target="_blank"><span class="fab fa-pinterest-square"></span></a>
+                            <a href="https://www.twitter.com/"
+                                target="_blank"><span class="fab fa-twitter-square"></span></a>
+                            <a href="https://www.youtube.com/"
+                                target="_blank"><span class="fab fa-youtube-square"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!---------------------- contact form ---------------------->
+                <div class="col-sm-4 form bdr-left">
+                    <h2>Contact us!</h2>
+                    <form method="POST" action="https://formdump.codeinstitute.net/">
+                        <p>Got something to add?<br />We’d <em>love</em> to hear!</p>
+                        <div class="form-row form-group text-center col-auto">
+                            <input type="text" class="form-control" placeholder="Your Name" name="full_name" id="fname" required />
+                        </div>
+                        <div class="form-row form-group text-center col-auto">
+                            <input
+                                type="email"
+                                class="form-control"
+                                placeholder="Your Email Address"
+                                name="email_address"
+                                id="email"
+                                required
+                                aria-describedby="emailHelp"
+                                />
+                            <small id="emailHelp" class="form-text text-muted"
+                                >We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-row form-group text-center col-auto">
+                            <textarea
+                                class="form-control"
+                                rows="2"
+                                placeholder="Your Message"
+                                name="your_message"
+                                id="message"
+                                required
+                                ></textarea>
+                        </div>
+                        <div
+                            class="form-row form-group col-auto d-flex justify-content-start align-items-center text-center">
+                            <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="newsletter-check"
+                                name="newsletter"
+                                checked
+                                />
+                            <label class="form-check-label" for="newsletter-check"
+                                >Add me to the mailing list!</label>
+                        </div>
+                        <div class="form-row form-group justify-content-center col-auto">
+                            <input type="submit" class="btn btn-outline-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!---------------------- end footer ---------------------->
+        <!---------------------- bootstrap script ---------------------->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
 </html>

@@ -1,262 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-	<!--bootstrap cdn-->
-	<script src="https://kit.fontawesome.com/35a878bce2.js" crossorigin="anonymous"></script>
-	<!--fontawesome import-->
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
-    <!--hover.css stylesheet import-->
-    <link href="assets/css/hover-min.css" rel="stylesheet">
-</head>
-
-<body>
-<!-- Sign up Modal -->
-<div class="modal fade" id="signupModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered row justify-content-center">
-    <div class="modal-content col-sm-8 content trans-modal">
-      <div class="modal-header">
-        <h4 class="modal-title" id="signupModalLabel"><strong>Newsletter</strong></h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Signing up to our Newsletter keeps you up to date with all the latest news and grants you discounts with our partners!
-       <form method="POST" action="https://formdump.codeinstitute.net/">
-        <div class="form-row form-group text-center col-auto pt-4">
-						<input type="text" class="form-control" placeholder="Name" name="full_name" id="fullname" required/>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+        <!---------------------- bootstrap cdn ---------------------->
+        <script src="https://kit.fontawesome.com/35a878bce2.js" crossorigin="anonymous"></script>
+        <!---------------------- fontawesome import ---------------------->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <!---------------------- hover.css stylesheet import ---------------------->
+        <link href="assets/css/hover-min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!---------------------- Sign up Modal ---------------------->
+        <div class="modal fade" id="signupModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered row justify-content-center">
+                <div class="modal-content col-sm-8 content trans-modal">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="signupModalLabel"><strong>Newsletter</strong></h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Signing up to our Newsletter keeps you up to date with all the latest news and grants you discounts with our partners!
+                        <form method="POST" action="https://formdump.codeinstitute.net/">
+                            <div class="form-row form-group text-center col-auto pt-4">
+                                <input type="text" class="form-control" placeholder="Name" name="full_name" id="fullname" required/>
+                            </div>
+                            <div class="form-row form-group text-center col-auto pb-4">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Email"
+                                    name="email"
+                                    id="emailaddress"
+                                    required
+                                    />
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <input type="submit" class="btn sign-up" value="Sign Me Up!">
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-		<div class="form-row form-group text-center col-auto pb-4">
-							<input
-                type="email"
-                class="form-control"
-                placeholder="Email"
-                name="email"
-                id="emailaddress"
-                required
-              />
-      </div>
-      <div class="modal-footer justify-content-center">
-        <input type="submit" class="btn sign-up" value="Sign Me Up!">
-      </div>
-      </form>
-    </div>
-    </div>
-    </div>
-</div> <!-- End Sign up Modal-->
-	<header>
-		<!--Bootstrap navbar-->
-		<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-			<div class="container-fluid">
-				<a href="#" class="navbar-brand">
-					<img src="assets/images/logowhite.svg" alt="" />
-          </a>
-					<button
-            class="navbar-toggler ml-auto"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-					<div class="collapse navbar-collapse" id="navbarNav">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a class="nav-link hvr-underline-from-center" href="index.html">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link hvr-underline-from-center" href="index.html#about">About</a>
-							</li>
-							<li class="nav-item active">
-								<a class="nav-link" href="builds.html">Builds<span class="sr-only">(current)</span></a>
-							</li>
-							<li class="nav-item dropdown mr-auto">
-								<a class="nav-link btn dropdown-toggle hvr-underline-from-center" href="#" id="navbarDropdown" role="button"
-									data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									Resources
-								</a>
-								<div class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item hvr-underline-from-center" href="podcasts-and-videos.html">Podcasts & Videos</a>
-									<a class="dropdown-item hvr-underline-from-center" href="articles.html">Articles</a>
-									<a class="dropdown-item hvr-underline-from-center" href="glossary.html">Glossary</a>
-								</div>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link sign-up hvr-grow" href="#signupModal" data-toggle="modal">Sign-up</a>
-							</li>
-						</ul>
-					</div>
-			</div>
-		</nav>
-	</header>
-	<!--end navbar-->
-	<main>
-		<!--main-->
-		<div class="container-fluid pb-5">
-			<div class="row text-center">
-				<div class="col-sm-12">
-					<h1 class="page-head">Builds</h1>
-					<div class="row about">
-						<div class="col-sm-4 offset-md-4">
-							<p class="content">
-								Select from one of the below to be taken to the appropriate
-								build guide. Here’s what you need to know about each one:
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row justify-content-center text-center padding desktop-only">
-				<!--build images-->
-				<div class="col-sm-4 hvr-icon-float">
-					<img
-              src="assets/images/caribou320build.png"
-              class="img-fluid img-thumbnail rounded hvr-icon"
-              alt="Caribou 320 Build"
-              title="Caribou 320 Build"
-            />
-          </div>
-					<div class="col-sm-4 hvr-icon-float">
-						<img
-              src="assets/images/prusabuild.png"
-              class="img-fluid img-thumbnail rounded hvr-icon"
-              alt="Prusa Build"
-              title="Prusa Build"
-            />
-          </div>
-						<div class="col-sm-4 hvr-icon-float">
-							<img
-              src="assets/images/bearbuild.png"
-              class="img-fluid img-thumbnail rounded hvr-icon"
-              alt="Bear Build"
-              title=" Bear Build"
-            />
-          </div>
-						</div>
-						<!--end build images-->
-						<div class="row tab-content" id="table-tabContent">
-							<!--dropdown buttons using dynamic tabbed interface -->
-							<div class="col-sm-12">
-								<ul class="nav nav-tabs justify-content-around padding" id="table-tab" role="tablist">
-									<li class="nav-item">
-										<!--caribou table dropdown button-->
-										<button
-                  class="btn btn-caribou hvr-icon-hang"
-                  type="button"
-                  data-toggle="tab"
-                  data-target="#caribouCollapse"
-                  aria-expanded="false"
-                  aria-controls="caribouCollapse"
-                  role="tab"
-                  id="table-caribouCollapse-tab"
-                  aria-selected="false"
-                >
-                  Caribou<span class="fa fa-arrow-circle-o-down hvr-icon pl-2"></span>
-                </button>
-									</li>
-									<li class="nav-item">
-										<!--prusa table dropdown button-->
-										<button
-                  class="btn btn-prusa hvr-icon-hang"
-                  type="button"
-                  data-toggle="tab"
-                  data-target="#prusaCollapse"
-                  aria-expanded="false"
-                  aria-controls="prusaCollapse"
-                  role="tab"
-                  id="table-prusaCollapse-tab"
-                  aria-selected="false"
-                >
-                  Prusa<span class="fa fa-arrow-circle-o-down hvr-icon pl-2"></span>
-                </button>
-									</li>
-									<li class="nav-item">
-										<!--bear table dropdown button-->
-										<button
-                  class="btn btn-danger active hvr-icon-hang"
-                  type="button"
-                  data-toggle="tab"
-                  data-target="#bearCollapse"
-                  aria-expanded="false"
-                  aria-controls="bearCollapse"
-                  role="tab"
-                  id="table-bearCollapse-tab"
-                  aria-selected="true"
-                >
-                  Bear<span class="fa fa-arrow-circle-o-down hvr-icon pl-2"></span>
-                </button>
-									</li>
-								</ul>
-							</div>
-							<!--end dropdown buttons  -->
-							<div class="col-sm-12 tab-pane fade show active mt-3" id="caribouCollapse" role="tabpanel">
-								<img
-              src="assets/images/caribou320build.png"
-              class="img-fluid img-thumbnail rounded mobile-only mb-3"
-              alt="Caribou 320 Build"
-              title="Caribou 320 Build"
-            />
-								<table class="table table-hover table-bordered">
-									<!--caribou dropdown table-->
-									<thead>
-										<tr>
-											<th class="text-center green-bg" scope="row" colspan="2">Caribou</th>
-										</tr>
-										<tr>
-											<th scope="col">Component</th>
-											<th scope="col">Details</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">Frame</th>
-											<td>3030 Aluminium Extrusions by MISUMI</td>
-										</tr>
-										<tr>
-											<th scope="row">Hardware</th>
-											<td>
-												<pre>
+        </div>
+        <!---------------------- End Sign up Modal ---------------------->
+        <header>
+            <!---------------------- fully custom navbar utilising bootstrap ---------------------->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a href="#" class="navbar-brand">
+                    <img src="assets/images/logowhite.svg" alt="" />
+                    </a>
+                    <button
+                        class="navbar-toggler ml-auto"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        >
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="index.html#about">About</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="builds.html">Builds<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item dropdown mr-auto">
+                                <a class="nav-link btn dropdown-toggle hvr-underline-from-center" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Resources
+                                </a>
+                                <div class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item hvr-underline-from-center" href="podcasts-and-videos.html">Podcasts & Videos</a>
+                                    <a class="dropdown-item hvr-underline-from-center" href="articles.html">Articles</a>
+                                    <a class="dropdown-item hvr-underline-from-center" href="glossary.html">Glossary</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link sign-up hvr-grow" href="#signupModal" data-toggle="modal">Sign-up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!---------------------- end navbar ---------------------->
+        <main>
+            <!---------------------- main ---------------------->
+            <div class="container-fluid pb-5">
+                <div class="row text-center">
+                    <div class="col-sm-12">
+                        <h1 class="page-head">Builds</h1>
+                        <!---------------------- about page section ---------------------->
+                        <div class="row about">
+                            <div class="col-sm-4 offset-md-4">
+                                <p class="content">
+                                    Select from one of the below to be taken to the appropriate
+                                    build guide. Here’s what you need to know about each one:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center text-center padding desktop-only">
+                    <!---------------------- build images ---------------------->
+                    <div class="col-sm-4 hvr-icon-float">
+                        <!---------------------- Caribou Build Img ---------------------->
+                        <img
+                            src="assets/images/caribou320build.png"
+                            class="img-fluid img-thumbnail rounded hvr-icon"
+                            alt="Caribou 320 Build"
+                            title="Caribou 320 Build"
+                            />
+                    </div>
+                    <div class="col-sm-4 hvr-icon-float">
+                        <!---------------------- Prusa Build Img ---------------------->
+                        <img
+                            src="assets/images/prusabuild.png"
+                            class="img-fluid img-thumbnail rounded hvr-icon"
+                            alt="Prusa Build"
+                            title="Prusa Build"
+                            />
+                    </div>
+                    <div class="col-sm-4 hvr-icon-float">
+                        <!---------------------- Bear Build Img ---------------------->
+                        <img
+                            src="assets/images/bearbuild.png"
+                            class="img-fluid img-thumbnail rounded hvr-icon"
+                            alt="Bear Build"
+                            title=" Bear Build"
+                            />
+                    </div>
+                </div>
+                <!---------------------- end build images ---------------------->
+                <div class="row tab-content" id="table-tabContent">
+                    <!---------------------- dropdown buttons using dynamic tabbed interface ---------------------->
+                    <div class="col-sm-12">
+                        <ul class="nav nav-tabs justify-content-around padding" id="table-tab" role="tablist">
+                            <li class="nav-item">
+                                <!---------------------- caribou table dropdown button ---------------------->
+                                <button
+                                    class="btn btn-caribou hvr-icon-hang"
+                                    type="button"
+                                    data-toggle="tab"
+                                    data-target="#caribouCollapse"
+                                    aria-expanded="false"
+                                    aria-controls="caribouCollapse"
+                                    role="tab"
+                                    id="table-caribouCollapse-tab"
+                                    aria-selected="false"
+                                    >
+                                Caribou<span class="fa fa-arrow-circle-o-down hvr-icon pl-2"></span>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <!---------------------- prusa table dropdown button ---------------------->
+                                <button
+                                    class="btn btn-prusa hvr-icon-hang"
+                                    type="button"
+                                    data-toggle="tab"
+                                    data-target="#prusaCollapse"
+                                    aria-expanded="false"
+                                    aria-controls="prusaCollapse"
+                                    role="tab"
+                                    id="table-prusaCollapse-tab"
+                                    aria-selected="false"
+                                    >
+                                Prusa<span class="fa fa-arrow-circle-o-down hvr-icon pl-2"></span>
+                                </button>
+                            </li>
+                            <li class="nav-item">
+                                <!---------------------- bear table dropdown button ---------------------->
+                                <button
+                                    class="btn btn-danger active hvr-icon-hang"
+                                    type="button"
+                                    data-toggle="tab"
+                                    data-target="#bearCollapse"
+                                    aria-expanded="false"
+                                    aria-controls="bearCollapse"
+                                    role="tab"
+                                    id="table-bearCollapse-tab"
+                                    aria-selected="true"
+                                    >
+                                Bear<span class="fa fa-arrow-circle-o-down hvr-icon pl-2"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <!---------------------- end dropdown buttons ---------------------->
+                    <div class="col-sm-12 tab-pane fade show active mt-3" id="caribouCollapse" role="tabpanel">
+                        <img
+                            src="assets/images/caribou320build.png"
+                            class="img-fluid img-thumbnail rounded mobile-only mb-3"
+                            alt="Caribou 320 Build"
+                            title="Caribou 320 Build"
+                            />
+                        <table class="table table-hover table-bordered">
+                            <!---------------------- caribou dropdown table ---------------------->
+                            <thead>
+                                <tr>
+                                    <th class="text-center green-bg" scope="row" colspan="2">Caribou</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Component</th>
+                                    <th scope="col">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Frame</th>
+                                    <td>3030 Aluminium Extrusions by MISUMI</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hardware</th>
+                                    <td>
+                                        <pre>
 Hardened Steel 8mm Rods by MISUMI
 LMU8 Bearings by MISUMI</pre>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Extruder</th>
-											<td>Bondtech extruder option</td>
-										</tr>
-										<tr>
-											<th scope="row">Bed</th>
-											<td>MK52 Heated Bed with Steel Sheet</td>
-										</tr>
-										<tr>
-											<th scope="row">Power Supply</th>
-											<td>Meanwell 320W PSU Option</td>
-										</tr>
-										<tr>
-											<th scope="row">MMU2 Compatability</th>
-											<td>..</td>
-										</tr>
-										<tr>
-											<th scope="row">Board</th>
-											<td>
-												EINSY RAMBo motherboard with Silent Trinamic drivers with
-												256 microstepping
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Features</th>
-											<td>
-												<pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extruder</th>
+                                    <td>Bondtech extruder option</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bed</th>
+                                    <td>MK52 Heated Bed with Steel Sheet</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Power Supply</th>
+                                    <td>Meanwell 320W PSU Option</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">MMU2 Compatability</th>
+                                    <td>..</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Board</th>
+                                    <td>
+                                        EINSY RAMBo motherboard with Silent Trinamic drivers with
+                                        256 microstepping
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Features</th>
+                                    <td>
+                                        <pre>
 Automatic mesh bed levelling
 Automatic skew axes compensation
 Magnetic PEI powder coat spring steel sheet
@@ -264,87 +267,87 @@ IR filament sensor
 Automatic loading of filament when filament is inserted
 P.I.N.D.A. 2 probe with included thermistor - faster temperature calibration
 Integrated LCD and SD card controller (8GB included)</pre>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Nozzle</th>
-											<td>
-												0,4mm nozzle (easily changeable) for 1,75 mm filament Layer
-												height from 0,05 mm
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Build Volume</th>
-											<td>
-												Great build volume – 25 x 21 x 32 cm (width, depth, height)
-											</td>
-										</tr>
-                                        <tr>
-                                            <th class="text-center green-bg" scope="row" colspan="2">Download Build Guide<span class="fas fa-external-link-alt ml-3"></span></th>
-                                        </tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="col-sm-12 tab-pane fade mt-3" id="prusaCollapse" role="tabpanel">
-								<img
-              src="assets/images/prusabuild.png"
-              class="img-fluid img-thumbnail rounded mobile-only mb-3"
-              alt="Prusa Build"
-              title="Prusa Build"
-            />
-								<table class="table table-hover table-bordered">
-									<!--prusa dropdown table-->
-									<thead>
-										<tr>
-											<th class="text-center orange-bg" scope="row" colspan="2">Prusa</th>
-										</tr>
-										<tr>
-											<th scope="col">Component</th>
-											<th scope="col">Details</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">Frame</th>
-											<td>
-												3030 Aluminium Extrusions on Y with milled Dural frame on Z
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Hardware</th>
-											<td>
-												<pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Nozzle</th>
+                                    <td>
+                                        0,4mm nozzle (easily changeable) for 1,75 mm filament Layer
+                                        height from 0,05 mm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Build Volume</th>
+                                    <td>
+                                        Great build volume – 25 x 21 x 32 cm (width, depth, height)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center green-bg" scope="row" colspan="2">Download Build Guide<span class="fas fa-external-link-alt ml-3"></span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-12 tab-pane fade mt-3" id="prusaCollapse" role="tabpanel">
+                        <img
+                            src="assets/images/prusabuild.png"
+                            class="img-fluid img-thumbnail rounded mobile-only mb-3"
+                            alt="Prusa Build"
+                            title="Prusa Build"
+                            />
+                        <table class="table table-hover table-bordered">
+                            <!---------------------- prusa dropdown table ---------------------->
+                            <thead>
+                                <tr>
+                                    <th class="text-center orange-bg" scope="row" colspan="2">Prusa</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Component</th>
+                                    <th scope="col">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Frame</th>
+                                    <td>
+                                        3030 Aluminium Extrusions on Y with milled Dural frame on Z
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hardware</th>
+                                    <td>
+                                        <pre>
 Hardened Steel 8mm Rods by MISUMI
 LMU8 Bearings by MISUMI</pre>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Extruder</th>
-											<td>Bondtech drive gears with E3D V6</td>
-										</tr>
-										<tr>
-											<th scope="row">Bed</th>
-											<td>MK52 Heated Bed with Steel Sheet</td>
-										</tr>
-										<tr>
-											<th scope="row">Power Supply</th>
-											<td>Meanwell 24V 240W</td>
-										</tr>
-										<tr>
-											<th scope="row">MMU2 Compatability</th>
-											<td>..</td>
-										</tr>
-										<tr>
-											<th scope="row">Board</th>
-											<td>
-												EINSY RAMBo motherboard with Silent Trinamic drivers with
-												256 microstepping
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Features</th>
-											<td>
-												<pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extruder</th>
+                                    <td>Bondtech drive gears with E3D V6</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bed</th>
+                                    <td>MK52 Heated Bed with Steel Sheet</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Power Supply</th>
+                                    <td>Meanwell 24V 240W</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">MMU2 Compatability</th>
+                                    <td>..</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Board</th>
+                                    <td>
+                                        EINSY RAMBo motherboard with Silent Trinamic drivers with
+                                        256 microstepping
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Features</th>
+                                    <td>
+                                        <pre>
 Automatic mesh bed levelling
 Automatic skew axes compensation
 Magnetic PEI powder coat spring steel sheet
@@ -353,87 +356,87 @@ Automatic loading of filament when filament is inserted
 P.I.N.D.A. 2 probe with included thermistor - faster temperature calibration
 Power Panic
 Integrated LCD and SD card controller</pre>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Nozzle</th>
-											<td>
-												0,4mm nozzle (easily changeable) for 1,75 mm filament Layer
-												height from 0,05 mm
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Build Volume</th>
-											<td>
-												Great build volume – 25 x 21 x 22 cm (width, depth, height)
-											</td>
-										</tr>
-                                        <tr>
-                                            <th class="text-center orange-bg" scope="row" colspan="2">Download Build Guide<span class="fas fa-external-link-alt ml-3"></span></th>
-                                        </tr>
-									</tbody>
-								</table>
-							</div>
-							<div class="col-sm-12 tab-pane fade mt-3" id="bearCollapse" role="tabpanel">
-								<img
-              src="assets/images/bearbuild.png"
-              class="img-fluid img-thumbnail rounded mobile-only mb-3"
-              alt="Bear Build"
-              title=" Bear Build"
-            />
-								<table class="table table-hover table-bordered">
-									<!--bear dropdown table-->
-									<thead>
-										<tr>
-											<th class="text-center red-bg" scope="row" colspan="2">Bear</th>
-										</tr>
-										<tr>
-											<th scope="col">Component</th>
-											<th scope="col">Details</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<th scope="row">Frame</th>
-											<td>V-slot 20-40 Aluminum Extrusions</td>
-										</tr>
-										<tr>
-											<th scope="row">Hardware</th>
-											<td>
-												<pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Nozzle</th>
+                                    <td>
+                                        0,4mm nozzle (easily changeable) for 1,75 mm filament Layer
+                                        height from 0,05 mm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Build Volume</th>
+                                    <td>
+                                        Great build volume – 25 x 21 x 22 cm (width, depth, height)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center orange-bg" scope="row" colspan="2">Download Build Guide<span class="fas fa-external-link-alt ml-3"></span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-sm-12 tab-pane fade mt-3" id="bearCollapse" role="tabpanel">
+                        <img
+                            src="assets/images/bearbuild.png"
+                            class="img-fluid img-thumbnail rounded mobile-only mb-3"
+                            alt="Bear Build"
+                            title=" Bear Build"
+                            />
+                        <table class="table table-hover table-bordered">
+                            <!---------------------- bear dropdown table ---------------------->
+                            <thead>
+                                <tr>
+                                    <th class="text-center red-bg" scope="row" colspan="2">Bear</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Component</th>
+                                    <th scope="col">Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Frame</th>
+                                    <td>V-slot 20-40 Aluminum Extrusions</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Hardware</th>
+                                    <td>
+                                        <pre>
 Hardened Steel 8mm Rods by MISUMI
 LMU8 Bearings by MISUMI</pre>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Extruder</th>
-											<td>
-												Bondtech drive gears with E3D V6/ Bondtech BMG optional.
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Bed</th>
-											<td>MK52 Heated Bed with Steel Sheet</td>
-										</tr>
-										<tr>
-											<th scope="row">Power Supply</th>
-											<td>Meanwell 24V 240W</td>
-										</tr>
-										<tr>
-											<th scope="row">MMU2 Compatability</th>
-											<td>..</td>
-										</tr>
-										<tr>
-											<th scope="row">Board</th>
-											<td>
-												EINSY RAMBo motherboard with Silent Trinamic drivers with
-												256 microstepping
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Features</th>
-											<td>
-												<pre>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extruder</th>
+                                    <td>
+                                        Bondtech drive gears with E3D V6/ Bondtech BMG optional.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bed</th>
+                                    <td>MK52 Heated Bed with Steel Sheet</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Power Supply</th>
+                                    <td>Meanwell 24V 240W</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">MMU2 Compatability</th>
+                                    <td>..</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Board</th>
+                                    <td>
+                                        EINSY RAMBo motherboard with Silent Trinamic drivers with
+                                        256 microstepping
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Features</th>
+                                    <td>
+                                        <pre>
 Automatic mesh bed levelling
 Automatic skew axes compensation
 Magnetic PEI powder coat spring steel sheet
@@ -442,139 +445,136 @@ Automatic loading of filament when filament is inserted
 P.I.N.D.A. 2 probe with included thermistor - faster temperature calibration
 Power Panic
 Integrated LCD and SD card controller</pre>
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Nozzle</th>
-											<td>
-												0,4mm nozzle (easily changeable) for 1,75 mm filament Layer
-												height from 0,05 mm
-											</td>
-										</tr>
-										<tr>
-											<th scope="row">Build Volume</th>
-											<td>
-												Great build volume – 25 x 21 x 22 cm (width, depth, height)
-											</td>
-										</tr>
-                                        <tr>
-                                            <th class="text-center red-bg" scope="row" colspan="2">Download Build Guide<span class="fas fa-external-link-alt ml-3"></span></th>
-                                        </tr>
-									</tbody>
-								</table>
-							</div>
-						</div>
-					</div>
-	</main>
-	<!--end main-->
-	<!--footer with logo-->
-	<footer class="container-fluid bg-dark">
-		<div class="row">
-			<div class="col-sm-8 d-flex justify-content-between">
-				<div class="row">
-					<div class="col-sm-12 p-2 d-flex justify-content-start align-items-center">
-						<a href="#"><img
-                  src="assets/images/logowhite.svg"
-                  alt=""
-                  class="mx-auto d-block"
-              /></a>
-					</div>
-					<!--contact details-->
-					<div class="col-sm-6 d-flex justify-content-center">
-						<address>
-							<h3 class="hvr-icon-pulse-grow">
-								Address <span class="fas fa-map-pin hvr-icon"></span>
-							</h3>
-                            <a href="https://goo.gl/maps/xxrJihnrqXCQjTNB7" target="_blank">
-							<p>Bravo Digital Designs,</p>
-							<p>Cork.</p>
-							<p>Ireland</p>
-                            </a>
-						</address>
-					</div>
-					<div class="col-sm-6 d-flex justify-content-center">
-						<address>
-							<h3 class="hvr-icon-grow-rotate">Email <span class="fas fa-paper-plane hvr-icon"></span></h3>
-							<p><a href="mailto:bdigital@design.com" target="_blank">BDigital@designs.com</a></p>
-						</address>
-					</div>
-					<!--Social-->
-					<div class="col-sm-12 d-flex align-items-end justify-content-center bdr-top">
-						<h6 class="text-muted">Socialise with us!</h6>
-					</div>
-					<div class="col p-2 d-flex justify-content-around align-items-center">
-						<!--use <span> for font awesome icons as more semantically correct-->
-						<a href="https://www.facebook.com/"
-							target="_blank"><span class="fab fa-facebook-square"></span></a>
-						<a href="https://www.instagram.com/"
-							target="_blank"><span class="fab fa-instagram-square"></span></a>
-						<a href="https://www.pinterest.com/"
-							target="_blank"><span class="fab fa-pinterest-square"></span></a>
-						<a href="https://www.twitter.com/"
-							target="_blank"><span class="fab fa-twitter-square"></span></a>
-						<a href="https://www.youtube.com/"
-							target="_blank"><span class="fab fa-youtube-square"></span></a>
-					</div>
-				</div>
-			</div>
-			<!--contact form-->
-			<div class="col-sm-4 form bdr-left">
-				<h2>Contact us!</h2>
-				<form method="POST" action="https://formdump.codeinstitute.net/">
-					<p>Got something to add?<br />We’d <em>love</em> to hear!</p>
-					<div class="form-row form-group text-center col-auto">
-						<input type="text" class="form-control" placeholder="Your Name" name="full_name" id="fname" required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Nozzle</th>
+                                    <td>
+                                        0,4mm nozzle (easily changeable) for 1,75 mm filament Layer
+                                        height from 0,05 mm
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Build Volume</th>
+                                    <td>
+                                        Great build volume – 25 x 21 x 22 cm (width, depth, height)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center red-bg" scope="row" colspan="2">Download Build Guide<span class="fas fa-external-link-alt ml-3"></span></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-						<div class="form-row form-group text-center col-auto">
-							<input
-                type="email"
-                class="form-control"
-                placeholder="Your Email Address"
-                name="email_address"
-                id="email"
-                required
-                aria-describedby="emailHelp"
-              />
-							<small id="emailHelp" class="form-text text-muted"
-                >We'll never share your email with anyone else.</small>
-						</div>
-						<div class="form-row form-group text-center col-auto">
-							<textarea
-                class="form-control"
-                rows="2"
-                placeholder="Your Message"
-                name="your_message"
-                id="message"
-                required
-              ></textarea>
-						</div>
-						<div
-							class="form-row form-group col-auto d-flex justify-content-start align-items-center text-center">
-							<input
-                type="checkbox"
-                class="form-check-input"
-                id="newsletter-check"
-                name="newsletter"
-                checked
-              />
-							<label class="form-check-label" for="newsletter-check"
-                >Add me to the mailing list!</label>
-						</div>
-						<div class="form-row form-group justify-content-center col-auto">
-							<input type="submit" class="btn btn-outline-primary">
-						</div>
-				</form>
-			</div>
-		</div>
-	</footer>
-	<!--end footer-->
-	<!--bootstrap script-->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-	</script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-	</script>
-</body>
-
+        </main>
+        <!---------------------- end main ---------------------->
+        <!---------------------- footer with logo ---------------------->
+        <footer class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-sm-8 d-flex justify-content-between">
+                    <div class="row">
+                        <div class="col-sm-12 p-2 d-flex justify-content-start align-items-center">
+                            <a href="#"><img
+                                src="assets/images/logowhite.svg"
+                                alt=""
+                                class="mx-auto d-block"
+                                /></a>
+                        </div>
+                        <!---------------------- contact details ---------------------->
+                        <div class="col-sm-6 d-flex justify-content-center">
+                            <address>
+                                <h3 class="hvr-icon-pulse-grow">
+                                    Address <span class="fas fa-map-pin hvr-icon"></span>
+                                </h3>
+                                <a href="https://goo.gl/maps/xxrJihnrqXCQjTNB7" target="_blank">
+                                    <p>Bravo Digital Designs,</p>
+                                    <p>Cork.</p>
+                                    <p>Ireland</p>
+                                </a>
+                            </address>
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-center">
+                            <address>
+                                <h3 class="hvr-icon-grow-rotate">Email <span class="fas fa-paper-plane hvr-icon"></span></h3>
+                                <p><a href="mailto:bdigital@design.com" target="_blank">BDigital@designs.com</a></p>
+                            </address>
+                        </div>
+                        <!---------------------- Social ---------------------->
+                        <div class="col-sm-12 d-flex align-items-end justify-content-center bdr-top">
+                            <h6 class="text-muted">Socialise with us!</h6>
+                        </div>
+                        <div class="col p-2 d-flex justify-content-around align-items-center">
+                            <!---------------------- use <span> for font awesome icons as more semantically correct ---------------------->
+                            <a href="https://www.facebook.com/"
+                                target="_blank"><span class="fab fa-facebook-square"></span></a>
+                            <a href="https://www.instagram.com/"
+                                target="_blank"><span class="fab fa-instagram-square"></span></a>
+                            <a href="https://www.pinterest.com/"
+                                target="_blank"><span class="fab fa-pinterest-square"></span></a>
+                            <a href="https://www.twitter.com/"
+                                target="_blank"><span class="fab fa-twitter-square"></span></a>
+                            <a href="https://www.youtube.com/"
+                                target="_blank"><span class="fab fa-youtube-square"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!---------------------- contact form ---------------------->
+                <div class="col-sm-4 form bdr-left">
+                    <h2>Contact us!</h2>
+                    <form method="POST" action="https://formdump.codeinstitute.net/">
+                        <p>Got something to add?<br />We’d <em>love</em> to hear!</p>
+                        <div class="form-row form-group text-center col-auto">
+                            <input type="text" class="form-control" placeholder="Your Name" name="full_name" id="fname" required />
+                        </div>
+                        <div class="form-row form-group text-center col-auto">
+                            <input
+                                type="email"
+                                class="form-control"
+                                placeholder="Your Email Address"
+                                name="email_address"
+                                id="email"
+                                required
+                                aria-describedby="emailHelp"
+                                />
+                            <small id="emailHelp" class="form-text text-muted"
+                                >We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-row form-group text-center col-auto">
+                            <textarea
+                                class="form-control"
+                                rows="2"
+                                placeholder="Your Message"
+                                name="your_message"
+                                id="message"
+                                required
+                                ></textarea>
+                        </div>
+                        <div
+                            class="form-row form-group col-auto d-flex justify-content-start align-items-center text-center">
+                            <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="newsletter-check"
+                                name="newsletter"
+                                checked
+                                />
+                            <label class="form-check-label" for="newsletter-check"
+                                >Add me to the mailing list!</label>
+                        </div>
+                        <div class="form-row form-group justify-content-center col-auto">
+                            <input type="submit" class="btn btn-outline-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!---------------------- end footer ---------------------->
+        <!---------------------- bootstrap script ---------------------->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
 </html>

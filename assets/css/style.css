@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap'); /* Google fonts import */
 
-/* Universal */
+/************************* UNIVERSAL *************************/
+
 body{
     position: relative;
     min-height: 100vh;
@@ -36,9 +37,88 @@ a:hover {
     text-decoration: underline;
     text-decoration-color: #FF785A
 }
-/*Colors*/
 
-    /*footer colors*/
+.mobile-head {
+    background-color: #ff785a;
+    background-image: url(../images/blizzard.png);
+    color: white;
+    display: block;
+    text-transform: capitalize;
+    font-family: 'Roboto';
+    text-align: center;
+    text-shadow: 0.6rem 0.5rem 0.3rem white;
+    font-weight: 700;
+}
+
+.section-head{
+    margin-top: 11rem;
+    padding-bottom: 10px;
+    font-size: 3em;
+    font-weight: 500;
+    color: #028EAF;
+    text-decoration: underline #FF785A!important;
+    text-transform: capitalize;
+}
+.page-head {
+    padding: 10px 10px;
+    font-size: 3em;
+    font-weight: 500;
+    color: #028EAF;
+    text-decoration: underline #FF785A!important;
+    text-transform: capitalize;
+}
+
+/************************* ANIMATIONS *************************/
+
+.hvr-underline-from-center:before {
+    background: #FF785A!important;
+    height: 2px!important;
+}
+
+@keyframes slide-l {
+  from {left: -60vw;}
+  to {left: 0vw;border: 2px solid #028EAF}
+}
+
+@keyframes slide-r {
+  from {right: -50vw;}
+  to {right: 50px;border: 2px solid #35CE8D}
+}
+
+@keyframes slide-b {
+  from {top: 100vh;}
+  to {top: 456px;border: 2px solid #ff785a;}
+}
+
+.slide-left {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: slide-l 3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.slide-right {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: slide-r 3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.slide-btm {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: slide-b 3s ease-in-out 1;
+    animation-fill-mode: forwards;
+}
+
+.animate {
+    animation: spinner-grow 6s ease-in-out 1;
+}
+
+/************************* COLORS *************************/
 
 .bdr-top {
     border-top: 2px solid #FF785A;
@@ -81,10 +161,59 @@ button.close {
     color:#fff;
 }
 
+.btn {
+    color: #fff;
+}
+
+dt {
+    color: #028eaf;
+}
+
 .depth {
     box-shadow: 2rem 1rem 3rem rgba(0,0,0,1.5)!important;
 }
-/* Navigation */
+
+.green-bg {
+    color: #fff;
+    background-color: #35ce8d;
+}
+
+.orange-bg {
+    color: #fff;
+    background-color: #ff785a;
+}
+
+.red-bg {
+    color: #fff;
+    background-color: #dc3545;
+}
+
+blockquote span {
+    color: #ff785a;
+}
+
+blockquote span:last-child {
+    color: #028EAF;
+}
+
+.btn-caribou, .btn-caribou:hover {
+    color: #fff;
+    background-color: #35ce8d;
+    border-color: #35ce8d;
+}
+
+.btn-prusa, .btn-prusa:hover {
+    color: #fff;
+    background-color: #ff785a;
+    border-color: #ff785a;
+}
+
+a[title="3D Printing - Wikipedia"],a[title="Prusa Face Shields"],a[title="Benchspace Cork"]{
+    color: #028EAF;
+}
+
+/************************* NAVIGATION *************************/
+
 header {
     font-family: 'Roboto', sans-serif;
     letter-spacing: 5px;
@@ -129,7 +258,9 @@ div a img {
     border-bottom: 2px solid #FF785A;
 }
 
-/* responsve logo media query - 767px width deliberate to accomodate ipad */
+/************************* RESPONSIVE MEDIA QUERIES *************************/
+
+/*- 767px width deliberate to accomodate ipad*/
 @media only screen and (max-width:767px) {
 .navbar-brand img {
     background-image: url(../images/logomini.svg);
@@ -140,6 +271,7 @@ div a img {
     height: 50px;
     }
 }
+
 @media only screen and (max-width:812px) {
 #bg-box, #trans-box, #tagline, #hero-image {
     display: none;
@@ -176,23 +308,8 @@ footer {
     }
 }
 
-.you-tube {
-    width: -webkit-fill-available;
-}
+/************************* MAIN *************************/
 
-.mobile-head {
-    background-color: #ff785a;
-    background-image: url(../images/blizzard.png);
-    color: white;
-    display: block;
-    text-transform: capitalize;
-    font-family: 'Roboto';
-    text-align: center;
-    text-shadow: 0.6rem 0.5rem 0.3rem white;
-    font-weight: 700;
-}
-
-/*main*/
 #tagline {
     top: 3em;
     right: 2em;
@@ -201,14 +318,6 @@ footer {
     font-size: 2em;
     font-weight: 700;
     z-index: 2;
-}
-
-blockquote span {
-    color: #ff785a;
-}
-
-blockquote span:last-child {
-    color: #028EAF;
 }
 
 div > span, .trans-content {
@@ -269,16 +378,6 @@ div > span, .trans-content {
     border: 2px solid #4c4c47;
 }
 
-.section-head{
-    margin-top: 11rem;
-    padding-bottom: 10px;
-    font-size: 3em;
-    font-weight: 500;
-    color: #028EAF;
-    text-decoration: underline #FF785A!important;
-    text-transform: capitalize;
-}
-
 .about{
     background-color: #FF785A;
     color: #fff;
@@ -293,12 +392,12 @@ a:not([href]):not([class]) {
     text-decoration: inherit;
 }
 
-a[title="3D Printing - Wikipedia"],a[title="Prusa Face Shields"],a[title="Benchspace Cork"]{
-    color: #028EAF;
-}
-
 .img-thumbnail, {
     margin-bottom:25px;
+}
+
+.you-tube {
+    width: -webkit-fill-available;
 }
 
 #build-carousel {
@@ -309,19 +408,8 @@ a[title="3D Printing - Wikipedia"],a[title="Prusa Face Shields"],a[title="Benchs
 .carousel-control-prev {
     filter: invert(100%);
 }
-/*build page*/
 
-.btn-caribou, .btn-caribou:hover {
-    color: #fff;
-    background-color: #35ce8d;
-    border-color: #35ce8d;
-}
-
-.btn-prusa, .btn-prusa:hover {
-    color: #fff;
-    background-color: #ff785a;
-    border-color: #ff785a;
-}
+/************************* BUILD PAGE *************************/
 
 pre {
     white-space: pre-wrap;
@@ -333,15 +421,6 @@ table td, table th {
     padding-right: inherit!important;
 }
 
-.page-head {
-    padding: 10px 10px;
-    font-size: 3em;
-    font-weight: 500;
-    color: #028EAF;
-    text-decoration: underline #FF785A!important;
-    text-transform: capitalize;
-}
-
 th ~ td {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -350,21 +429,35 @@ th ~ td {
     border-bottom: 0px;
 }
 
-.green-bg {
-    color: #fff;
-    background-color: #35ce8d;
+/************************* ARTICLES PAGE *************************/
+
+.img-profile {
+    width: 50px;
+    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
+    border: 1px solid #ff785a;
+    border-radius: 50%;
 }
 
-.orange-bg {
-    color: #fff;
-    background-color: #ff785a;
+.img-wrap {
+    width:50%;
 }
 
-.red-bg {
-    color: #fff;
-    background-color: #dc3545;
+.expand-text {
+    color: #ff785a!important;
 }
-/*footer*/
+
+ul{
+    list-style: none;
+}
+
+.not-sticky {
+    position: inherit!important;
+}
+
+/************************* FOOTER *************************/
+
 footer {
     background-image: url(../images/blizzard.png);
     position: sticky;
@@ -417,81 +510,4 @@ form p {
 
 textarea {
     resize: none;
-}
-
-/* Articles page */
-
-.img-profile {
-    width: 50px;
-    height: 50px;
-    max-width: 50px;
-    max-height: 50px;
-    border: 1px solid #ff785a;
-    border-radius: 50%;
-}
-
-.img-wrap {
-    width:50%;
-}
-
-.expand-text {
-    color: #ff785a!important;
-}
-
-ul{
-    list-style: none;
-}
-
-.not-sticky {
-    position: inherit!important;
-}
-
-/*Animations*/
-
-.hvr-underline-from-center:before {
-    background: #FF785A!important;
-    height: 2px!important;
-}
-
-@keyframes slide-l {
-  from {left: -60vw;}
-  to {left: 0vw;border: 2px solid #028EAF}
-}
-
-@keyframes slide-r {
-  from {right: -50vw;}
-  to {right: 50px;border: 2px solid #35CE8D}
-}
-
-@keyframes slide-b {
-  from {top: 100vh;}
-  to {top: 456px;border: 2px solid #ff785a;}
-}
-
-.slide-left {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    animation: slide-l 3s ease-in-out 1;
-    animation-fill-mode: forwards;
-}
-
-.slide-right {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    animation: slide-r 3s ease-in-out 1;
-    animation-fill-mode: forwards;
-}
-
-.slide-btm {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    animation: slide-b 3s ease-in-out 1;
-    animation-fill-mode: forwards;
-}
-
-.animate {
-    animation: spinner-grow 6s ease-in-out 1;
 }
