@@ -294,7 +294,7 @@
                 <div class="col-sm-8 d-flex justify-content-between">
                     <div class="row">
                         <div class="col-sm-12 p-2 d-flex justify-content-start align-items-center">
-                            <a href="#"><img
+                            <a href="#" aria-label="logo link to home page"><img
                                 src="assets/images/logowhite.svg"
                                 alt=""
                                 class="mx-auto d-block"
@@ -326,15 +326,15 @@
                         <div class="col p-2 d-flex justify-content-around align-items-center">
                             <!--******************** use <span> for font awesome icons as more semantically correct ********************-->
                             <a href="https://www.facebook.com/"
-                                target="_blank"><span class="fab fa-facebook-square"></span></a>
+                                target="_blank" aria-label="facebook page icon"><span class="fab fa-facebook-square"></span></a>
                             <a href="https://www.instagram.com/"
-                                target="_blank"><span class="fab fa-instagram-square"></span></a>
+                                target="_blank" aria-label="instagram page icon"><span class="fab fa-instagram-square"></span></a>
                             <a href="https://www.pinterest.com/"
-                                target="_blank"><span class="fab fa-pinterest-square"></span></a>
+                                target="_blank" aria-label="pinterest page icon"><span class="fab fa-pinterest-square"></span></a>
                             <a href="https://www.twitter.com/"
-                                target="_blank"><span class="fab fa-twitter-square"></span></a>
+                                target="_blank" aria-label="twitter page icon"><span class="fab fa-twitter-square"></span></a>
                             <a href="https://www.youtube.com/"
-                                target="_blank"><span class="fab fa-youtube-square"></span></a>
+                                target="_blank" aria-label="youtube page icon"><span class="fab fa-youtube-square"></span></a>
                         </div>
                     </div>
                 </div>
@@ -344,7 +344,7 @@
                     <form method="POST" action="https://formdump.codeinstitute.net/">
                         <p>Got something to add?<br />We’d <em>love</em> to hear!</p>
                         <div class="form-row form-group text-center col-auto">
-                            <input type="text" class="form-control" placeholder="Your Name" name="full_name" id="fname" required />
+                            <input type="text" class="form-control" placeholder="Your Name" name="full_name" id="fname" aria-label="form" required />
                         </div>
                         <div class="form-row form-group text-center col-auto">
                             <input
@@ -355,6 +355,7 @@
                                 id="email"
                                 required
                                 aria-describedby="emailHelp"
+                                aria-label="email input form"
                                 />
                             <small id="emailHelp" class="form-text text-muted"
                                 >We'll never share your email with anyone else.</small>
@@ -367,6 +368,7 @@
                                 name="your_message"
                                 id="message"
                                 required
+                                aria-label="text-box for message"
                                 ></textarea>
                         </div>
                         <div
@@ -377,12 +379,13 @@
                                 id="newsletter-check"
                                 name="newsletter"
                                 checked
+                                aria-label="checkbox for newsletter sign-up"
                                 />
                             <label class="form-check-label" for="newsletter-check"
                                 >Add me to the mailing list!</label>
                         </div>
                         <div class="form-row form-group justify-content-center col-auto">
-                            <input type="submit" class="btn btn-outline-primary">
+                            <input type="submit" class="btn btn-outline-primary" aria-label="submit form button">
                         </div>
                     </form>
                 </div>
