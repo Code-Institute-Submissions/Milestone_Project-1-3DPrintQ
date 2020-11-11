@@ -292,13 +292,13 @@ footer {
     }
 }
 
-@media only screen and (min-width:769px) {
+@media only screen and (min-width:992px) {
 .mobile-only {
     display: none!important;
     }
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:991px) {
 .desktop-only {
     display: none!important;
     }
@@ -383,7 +383,7 @@ div > span, .trans-content {
 
 .about{
     background-color: #FF785A;
-    color: #fff;
+    color: #010100;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 5px;
     padding-top:15px;
