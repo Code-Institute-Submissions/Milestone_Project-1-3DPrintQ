@@ -1,1 +1,215 @@
 en/latest/404.html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>3DPrintQ Home</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+            integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+        <!--******************** bootstrap cdn ********************-->
+        <script src="https://kit.fontawesome.com/35a878bce2.js" crossorigin="anonymous"></script>
+        <!--******************** fontawesome import ********************-->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <!--******************** hover.css stylesheet import ********************-->
+        <link href="assets/css/hover-min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--******************** Sign up Modal ********************-->
+        <div class="modal fade" id="signupModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered row justify-content-center">
+                <div class="modal-content col-sm-8 content trans-modal">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="signupModalLabel"><strong>Newsletter</strong></h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Signing up to our Newsletter keeps you up to date with all the latest news and grants you discounts with our partners!
+                        <form method="POST" action="https://formdump.codeinstitute.net/">
+                            <div class="form-row form-group text-center col-auto pt-4">
+                                <input type="text" class="form-control" placeholder="Name" name="full_name" id="fullname" required/>
+                            </div>
+                            <div class="form-row form-group text-center col-auto pb-4">
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    placeholder="Email"
+                                    name="email"
+                                    id="emailaddress"
+                                    required
+                                    />
+                            </div>
+                            <div class="modal-footer justify-content-center">
+                                <input type="submit" class="btn sign-up" value="Sign Me Up!">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--******************** End Sign up Modal ********************-->
+        <header>
+            <!--******************** fully custom navbar utilising bootstrap ********************-->
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand">
+                    <img src="assets/images/logowhite.svg" alt="3DPrintQ logo" />
+                    </a>
+                    <button
+                        class="navbar-toggler ml-auto"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                        >
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link hvr-underline-from-center" href="builds.html">Builds</a>
+                            </li>
+                            <li class="nav-item dropdown mr-auto">
+                                <a class="nav-link btn dropdown-toggle hvr-underline-from-center" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Resources
+                                </a>
+                                <div class="dropdown-menu" id="dropdown" aria-labelledby="navbarDropdown">
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item hvr-underline-from-center" href="podcasts-and-videos.html">Podcasts & Videos</a>
+                                    <a class="dropdown-item hvr-underline-from-center" href="articles.html">Articles</a>
+                                    <a class="dropdown-item hvr-underline-from-center" href="glossary.html">Glossary</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link sign-up hvr-grow" href="#signupModal" data-toggle="modal">Sign-up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--******************** end navbar ********************-->
+        <main>
+            <!--******************** main ********************-->
+
+ </main>
+        <!--******************** end main ********************-->
+        <!--******************** footer with logo ********************-->
+        <footer class="container-fluid bg-dark">
+            <div class="row">
+                <div class="col-sm-8 d-flex justify-content-between">
+                    <div class="row">
+                        <div class="col-sm-12 p-2 d-flex justify-content-start align-items-center">
+                            <a href="#"><img
+                                src="assets/images/logowhite.svg"
+                                alt=""
+                                class="mx-auto d-block"
+                                /></a>
+                        </div>
+                        <!--******************** contact details ********************-->
+                        <div class="col-sm-6 d-flex justify-content-center">
+                            <address>
+                                <span class="hvr-icon-pulse-grow hsize">
+                                    Address <span class="fas fa-map-pin hvr-icon"></span>
+                                </span>
+                                <a href="https://goo.gl/maps/xxrJihnrqXCQjTNB7" target="_blank">
+                                    <p>Bravo Digital Designs,</p>
+                                    <p>Cork.</p>
+                                    <p>Ireland</p>
+                                </a>
+                            </address>
+                        </div>
+                        <div class="col-sm-6 d-flex justify-content-center">
+                            <address>
+                                <span class="hvr-icon-grow-rotate hsize">Email <span class="fas fa-paper-plane hvr-icon"></span></span>
+                                <p><a href="mailto:bdigital@design.com" target="_blank">BDigital@designs.com</a></p>
+                            </address>
+                        </div>
+                        <!--******************** Social ********************-->
+                        <div class="col-sm-12 d-flex align-items-end justify-content-center bdr-top">
+                            <h6 class="text-muted">Socialise with us!</h6>
+                        </div>
+                        <div class="col p-2 d-flex justify-content-around align-items-center">
+                            <!--******************** use <span> for font awesome icons as more semantically correct ********************-->
+                            <a href="https://www.facebook.com/"
+                                target="_blank"><span class="fab fa-facebook-square"></span></a>
+                            <a href="https://www.instagram.com/"
+                                target="_blank"><span class="fab fa-instagram-square"></span></a>
+                            <a href="https://www.pinterest.com/"
+                                target="_blank"><span class="fab fa-pinterest-square"></span></a>
+                            <a href="https://www.twitter.com/"
+                                target="_blank"><span class="fab fa-twitter-square"></span></a>
+                            <a href="https://www.youtube.com/"
+                                target="_blank"><span class="fab fa-youtube-square"></span></a>
+                        </div>
+                    </div>
+                </div>
+                <!--******************** contact form ********************-->
+                <div class="col-sm-4 form bdr-left">
+                    <h2>Contact us!</h2>
+                    <form method="POST" action="https://formdump.codeinstitute.net/">
+                        <p>Got something to add?<br />We’d <em>love</em> to hear!</p>
+                        <div class="form-row form-group text-center col-auto">
+                            <input type="text" class="form-control" placeholder="Your Name" name="full_name" id="fname" required />
+                        </div>
+                        <div class="form-row form-group text-center col-auto">
+                            <input
+                                type="email"
+                                class="form-control"
+                                placeholder="Your Email Address"
+                                name="email_address"
+                                id="email"
+                                required
+                                aria-describedby="emailHelp"
+                                />
+                            <small id="emailHelp" class="form-text text-muted"
+                                >We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-row form-group text-center col-auto">
+                            <textarea
+                                class="form-control"
+                                rows="2"
+                                placeholder="Your Message"
+                                name="your_message"
+                                id="message"
+                                required
+                                ></textarea>
+                        </div>
+                        <div
+                            class="form-row form-group col-auto d-flex justify-content-start align-items-center text-center">
+                            <input
+                                type="checkbox"
+                                class="form-check-input"
+                                id="newsletter-check"
+                                name="newsletter"
+                                checked
+                                />
+                            <label class="form-check-label" for="newsletter-check"
+                                >Add me to the mailing list!</label>
+                        </div>
+                        <div class="form-row form-group justify-content-center col-auto">
+                            <input type="submit" class="btn btn-outline-primary">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!--******************** end footer ********************-->
+        <!--******************** bootstrap script ********************-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    </body>
+</html>
