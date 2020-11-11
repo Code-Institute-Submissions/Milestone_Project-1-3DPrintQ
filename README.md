@@ -166,15 +166,16 @@ All links have been extensively tested to ensure correct continuity.
 #### First Time Visitor Goals
 * The site has a clear 'About' section which provides insight to it's purpose and infrmation that users are looking for.
 * The site has a clear well thought out structure that is familiar to the user and the site itself guides you to each section. All navigation links were also extensively tested to ensure continuity.
-* The site is fully responsive across Desktops, tablets and mobile devices and was tested using Chrome Developer tools on Ipad, Ipad Pro, Iphone 6,7,8 X, Xiaomi F2, Xiamoi F1, Mac pro, MacBook and Safari.
-
+* The site is fully responsive across Desktops, tablets and mobile devices and was tested using Chrome Developer tools on Ipad, Ipad Pro, Iphone 6,7,8 X, Xiaomi F2, Xiamoi F1, Mac pro, MacBook and Safari.    
+![Responsive about section](mdimages/responsiveabout.png)
 #### Returning Visitor Goals
 * There is additional information to external resources by way of podcasts and videos. These do not auto play and can be played by the user across all devices and all work correctly.
 * There is a specific 'Contact Us' section located in the footer as well as an email address also. Clicking the email address will open up a users email client and the contact us form has been tested extensively and returns a confirmation page that the form was submiited successfully.
-* All social media links are housed within the footer and have all been tested.
-
+* All social media links are housed within the footer and have all been tested.    
+![social media icons](mdimages/socialcontact.png)
 #### Frequent User Goals
-*  User's are prompted a number of times to sign-up to the Newsletter which will keep them up to date with podcasts and videos, blog posts, articles and any other relevant information. The Newsletter modal has been tested extensively and returns a confirmation page that the form was submiited successfully.
+*  User's are prompted a number of times to sign-up to the Newsletter which will keep them up to date with podcasts and videos, blog posts, articles and any other relevant information. The Newsletter modal has been tested extensively and returns a confirmation page that the form was submiited successfully.    
+![newsletter sign up](mdimages/newslettersignup.png)
 
 #### Further Testing
 
