@@ -96,7 +96,10 @@ The site uses the following 5 colours primarily.
 The hero image was chosen to show the wide range of things of which an be 3D printed. With it’s vicarious colours it was used so as to be eye catching and as it fit the color scheme of the site.
 As branding is alway important, the brand logo is used within the header and the footer. The header is sticky and so keeps the branding in sight at all times. 
 #### Wireframes
-![wireframeimage](mdimages/wireframe.png)    
+![wireframeimage](mdimages/wireframe.png)   
+![wireframeimage](mdimages/figmawireframe.png)     
+    
+     
 Full Wireframes drawn up using Figma can be found [here](https://www.figma.com/file/AksKEgNktmnJGypPxnyAFT/Milestone-Project-1-3D-Print-Q?node-id=0%3A1)
 
 ## Features
