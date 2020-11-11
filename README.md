@@ -98,8 +98,8 @@ As branding is alway important, the brand logo is used within the header and the
 #### Wireframes
 ![wireframeimage](mdimages/wireframe.png)   
 ![wireframeimage](mdimages/figmawireframe.png)     
-    
-     
+
+
 Full Wireframes drawn up using Figma can be found [here](https://www.figma.com/file/AksKEgNktmnJGypPxnyAFT/Milestone-Project-1-3D-Print-Q?node-id=0%3A1)
 
 ## Features
@@ -109,6 +109,7 @@ Full Wireframes drawn up using Figma can be found [here](https://www.figma.com/f
 * All YouTube videos are embedded and can be play/paused by the user. As with all podcasts. 
 * The footer is partially visible as you scroll to the bottom and fully reveals itself once the bottom of the page is reached.
 * Sign-up opens the sign-up modal. 
+* Custom 404 page should the user navigate to a non-existant link.
 
 ## Technologies Used
 ### Languages Used
