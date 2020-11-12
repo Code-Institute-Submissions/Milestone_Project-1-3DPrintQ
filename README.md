@@ -188,12 +188,12 @@ All links have been extensively tested to ensure correct continuity.
 Lighthouse, a Google Chrome web developement tool, was used extensively on the site in it's entirety. Every individual page was tested for desktop and mobile and received a score of in excess of 90+ across Performance, Accessability, Best Practices and SEO.    
 ![Lighthouse Screenshot](mdassets/mdimages/lighthouseresult.png)    
 A copy of the Lighthouse report for each individual page can be found below:    
-* Index - [Lighthouse Desktop Result](mdassets/pdf/index-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](index-lighthouse-report-mobile.pdf)
-* Builds - [Lighthouse Desktop Result](mdassets/pdf/builds-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](builds-lighthouse-report-mobile.pdf)
+* Index - [Lighthouse Desktop Result](mdassets/pdf/index-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/index-lighthouse-report-mobile.pdf)
+* Builds - [Lighthouse Desktop Result](mdassets/pdf/builds-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/builds-lighthouse-report-mobile.pdf)
 * Podcasts & videos - [Lighthouse Desktop Result](mdassets/pdf/podcasts-and-videos-lighthouse-report-desktop.pdf) | 
-* Articles - [Lighthouse Desktop Result](mdassets/pdf/articles-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](articles-lighthouse-report-mobile.pdf)
-* Articles Page 2 - [Lighthouse Desktop Result](mdassets/pdf/articles-pg-2-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](articles-pg-2-lighthouse-report-mobile.pdf)
-* Glossary - [Lighthouse Desktop Result](mdassets/pdf/glossary-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](glossary-lighthouse-report-mobile.pdf)
+* Articles - [Lighthouse Desktop Result](mdassets/pdf/articles-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/articles-lighthouse-report-mobile.pdf)
+* Articles Page 2 - [Lighthouse Desktop Result](mdassets/pdf/articles-pg-2-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/articles-pg-2-lighthouse-report-mobile.pdf)
+* Glossary - [Lighthouse Desktop Result](mdassets/pdf/glossary-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/glossary-lighthouse-report-mobile.pdf)
 * 404 
 #### Known Bugs
 * No known bugs.
@@ -247,7 +247,7 @@ To request a new feature or function then please open an issue [here](https://gi
 * Bootstrap4: Bootstrap Library used throughout the project mainly to make site responsive using the Bootstrap Grid System.
 * CSS Styling code and corresponding classes/id’s was that of the developer Jay Bradley.
 * Process to creating slideout footer was taken from this [CSS Tricks Article](https://css-tricks.com/the-slideout-footer/).
-* Invesrion of carousel arrow colours css code from this [stackoverflow Article](https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel). 
+* Inversion of carousel arrow colours css code from this [stackoverflow Article](https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel). 
 
 ### Content
 Majority of the about content was written by the developer Jay Bradley. As referenced, some is from wikipedia.  
