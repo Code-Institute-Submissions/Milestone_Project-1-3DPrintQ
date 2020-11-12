@@ -34,6 +34,7 @@
     - [Git](#git "Git")  
     - [GitHub](#github "GitHub")  
     - [Gitpod](#gitpod "Gitpod")  
+    - [Lighthouse](#lighthouse "Lighthouse")    
 - [Testing](#testing "Testing")  
         - [Testing User Stories from User Experience (UX)](#testing-user-stories-from-user-experience-(ux) "Testing User Stories from User Experience (UX) Section")  
         - [First Time Visitor Goals](#first-time-visitor-goals "First Time Visitor Goals")  
@@ -60,8 +61,8 @@ This was created to demonstrate learnings from the Code Institute software devel
 
 ## The 3D Print Q
 
-The3DPrintQ website is a fully responsive website designed to introduce hobbyists to 3D printing. It explains what 3D printing is and directs users to common ‘builds’ so that they can build their own! For the site owner, it’s purpose is to capture email addresses so as to promote paid content and affiliate links. 
-The site can be viewed [here](https://logisticbravo.github.io/Milestone_Project-1-3DPrintQ/).
+The3DPrintQ website is a fully responsive website designed to introduce hobbyists to 3D printing. It explains what 3D printing is and directs users to common ‘builds’ so that they can build their own! For the site owner, it’s purpose is to capture email addresses so as to promote paid content and affiliate links.    
+A live version of the site can be viewed [here](https://logisticbravo.github.io/Milestone_Project-1-3DPrintQ/).
 
 ![image](mdimages/responsivedisplays.png "Images of site on mutiple screen sizes")
 
@@ -146,7 +147,9 @@ freephototool.com was used to create the ‘3DPrintQ’ logo and it’s negative
 #### [GitHub](https://github.com/)
 * GitHub is used to store the projects code after being pushed from Git.
 #### [Gitpod](https://gitpod.io/)
-* Gitpod was used as the primary IDE for development of the site.
+* Gitpod was used as the primary IDE for development of the site.    
+#### [Lighthouse](https://developers.google.com/web/tools/lighthouse)
+* Lighthouse, a Google Web Dev tool, was used extensively for testing performance, accessability, best practices and SEO of the site in it's entirety.
 
 ## Testing
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
@@ -182,7 +185,16 @@ All links have been extensively tested to ensure correct continuity.
 ![newsletter sign up](mdimages/newslettersignup.png)
 
 #### Further Testing
-
+Lighthouse, a Google Chrome web developement tool, was used extensively on the site in it's entirety. Every individual page was tested for desktop and mobile and received a score of in excess of 90+ across Performance, Accessability, Best Practices and SEO.    
+![Lighthouse Screenshot](mdimages/lighthouseresult.png)    
+A copy of the Lighthouse report for each individual page can be found below:    
+* Index 
+* Builds
+* Podcasts & videos
+* Articles
+* Articles Page 2
+* Glossary
+* 404
 #### Known Bugs
 * No known bugs.
 
