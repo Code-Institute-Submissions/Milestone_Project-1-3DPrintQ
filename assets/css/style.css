@@ -528,6 +528,7 @@ textarea {
 }
 /************************* hover.css *************************/
 /*The following CSS is taken from hover.css so as to remove the min.css file for performance improvements*/
+
 .hvr-icon-hang {
     display: inline-block;
     vertical-align: middle;
