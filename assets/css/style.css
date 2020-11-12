@@ -67,6 +67,14 @@ a:hover {
     text-transform: capitalize;
 }
 
+.rel-articles-head {
+    padding: 10px 10px;
+    font-weight: 500;
+    color: #028EAF;
+    text-decoration: underline #FF785A!important;
+    text-transform: capitalize;
+}
+
 .hsize {
   display: inline;  
   font-size: 1.75em;
