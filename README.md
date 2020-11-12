@@ -64,7 +64,7 @@ This was created to demonstrate learnings from the Code Institute software devel
 The3DPrintQ website is a fully responsive website designed to introduce hobbyists to 3D printing. It explains what 3D printing is and directs users to common ‘builds’ so that they can build their own! For the site owner, it’s purpose is to capture email addresses so as to promote paid content and affiliate links.    
 A live version of the site can be viewed [here](https://logisticbravo.github.io/Milestone_Project-1-3DPrintQ/).
 
-![image](mdimages/responsivedisplays.png "Images of site on mutiple screen sizes")
+![image](mdassets/mdimages/responsivedisplays.png "Images of site on mutiple screen sizes")
 
 ## User Experience (UX)
 ### User stories
@@ -84,7 +84,7 @@ A live version of the site can be viewed [here](https://logisticbravo.github.io/
 ### Design
 #### Colour Scheme
 The site uses the following 5 colours primarily.   
-![image](mdimages/colors.png)
+![image](mdassets/mdimages/colors.png)
 * Green - rgb(53,206,141) #35CE8D
 * Blue - rgb(2,142,175) #028EAF
 * White - rgb(255,255,255) #FFFFFF
@@ -97,8 +97,8 @@ The site uses the following 5 colours primarily.
 The hero image was chosen to show the wide range of things of which an be 3D printed. With it’s vicarious colours it was used so as to be eye catching and as it fit the color scheme of the site.
 As branding is alway important, the brand logo is used within the header and the footer. The header is sticky and so keeps the branding in sight at all times. 
 #### Wireframes
-![wireframeimage](mdimages/wireframe.png)   
-![wireframeimage](mdimages/figmawireframe.png)     
+![wireframeimage](mdassets/mdimages/wireframe.png)   
+![wireframeimage](mdassets/mdimages/figmawireframe.png)     
 
 
 Full Wireframes drawn up using Figma can be found [here](https://www.figma.com/file/AksKEgNktmnJGypPxnyAFT/Milestone-Project-1-3D-Print-Q?node-id=0%3A1)
@@ -174,34 +174,34 @@ All links have been extensively tested to ensure correct continuity.
 * The site has a clear 'About' section which provides insight to it's purpose and infrmation that users are looking for.
 * The site has a clear well thought out structure that is familiar to the user and the site itself guides you to each section. All navigation links were also extensively tested to ensure continuity.
 * The site is fully responsive across Desktops, tablets and mobile devices and was tested using Chrome Developer tools on Ipad, Ipad Pro, Iphone 6,7,8 X, Xiaomi F2, Xiamoi F1, Mac pro, MacBook and Safari.    
-![Responsive about section](mdimages/responsiveabout.png)
+![Responsive about section](mdassets/mdimages/responsiveabout.png)
 #### Returning Visitor Goals
 * There is additional information to external resources by way of podcasts and videos. These do not auto play and can be played by the user across all devices and all work correctly.
 * There is a specific 'Contact Us' section located in the footer as well as an email address also. Clicking the email address will open up a users email client and the contact us form has been tested extensively and returns a confirmation page that the form was submiited successfully.
 * All social media links are housed within the footer and have all been tested.    
-![social media icons](mdimages/socialcontact.png)
+![social media icons](mdassets/mdimages/socialcontact.png)
 #### Frequent User Goals
 *  User's are prompted a number of times to sign-up to the Newsletter which will keep them up to date with podcasts and videos, blog posts, articles and any other relevant information. The Newsletter modal has been tested extensively and returns a confirmation page that the form was submiited successfully.    
-![newsletter sign up](mdimages/newslettersignup.png)
+![newsletter sign up](mdassets/mdimages/newslettersignup.png)
 
 #### Further Testing
 Lighthouse, a Google Chrome web developement tool, was used extensively on the site in it's entirety. Every individual page was tested for desktop and mobile and received a score of in excess of 90+ across Performance, Accessability, Best Practices and SEO.    
-![Lighthouse Screenshot](mdimages/lighthouseresult.png)    
+![Lighthouse Screenshot](mdassets/mdimages/lighthouseresult.png)    
 A copy of the Lighthouse report for each individual page can be found below:    
-* Index 
-* Builds
-* Podcasts & videos
-* Articles
-* Articles Page 2
-* Glossary
-* 404
+* Index - [Lighthouse Desktop Result](mdassets/pdf/index-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](index-lighthouse-report-mobile.pdf)
+* Builds - [Lighthouse Desktop Result](mdassets/pdf/builds-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](builds-lighthouse-report-mobile.pdf)
+* Podcasts & videos - [Lighthouse Desktop Result](mdassets/pdf/podcasts-and-videos-lighthouse-report-desktop.pdf) | 
+* Articles - [Lighthouse Desktop Result](mdassets/pdf/articles-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](articles-lighthouse-report-mobile.pdf)
+* Articles Page 2 - [Lighthouse Desktop Result](mdassets/pdf/articles-pg-2-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](articles-pg-2-lighthouse-report-mobile.pdf)
+* Glossary - [Lighthouse Desktop Result](mdassets/pdf/glossary-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](glossary-lighthouse-report-mobile.pdf)
+* 404 
 #### Known Bugs
 * No known bugs.
 
 ## Deployment
 
 #### Using Github Pages
-![Image](mdimages/deployment.gif)  
+![Image](mdassets/mdimages/deployment.gif)  
 1. Navigate to the GitHub Repository:[3DPrintQ](https://github.com/LogisticBravo/Milestone_Project-1-3DPrintQ)
 2. Click the 'Settings' Tab.
 3. Scroll Down to the Git Hub Pages Heading.
