@@ -190,11 +190,11 @@ Lighthouse, a Google Chrome web developement tool, was used extensively on the s
 A copy of the Lighthouse report for each individual page can be found below:    
 * Index - [Lighthouse Desktop Result](mdassets/pdf/index-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/index-lighthouse-report-mobile.pdf)
 * Builds - [Lighthouse Desktop Result](mdassets/pdf/builds-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/builds-lighthouse-report-mobile.pdf)
-* Podcasts & videos - [Lighthouse Desktop Result](mdassets/pdf/podcasts-and-videos-lighthouse-report-desktop.pdf) | 
+* Podcasts & videos - [Lighthouse Desktop Result](mdassets/pdf/podcasts-and-videos-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/podcasts-and-videos-lighthouse-report-mobile.pdf)
 * Articles - [Lighthouse Desktop Result](mdassets/pdf/articles-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/articles-lighthouse-report-mobile.pdf)
 * Articles Page 2 - [Lighthouse Desktop Result](mdassets/pdf/articles-pg-2-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/articles-pg-2-lighthouse-report-mobile.pdf)
 * Glossary - [Lighthouse Desktop Result](mdassets/pdf/glossary-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/glossary-lighthouse-report-mobile.pdf)
-* 404 
+* 404 - [Lighthouse Desktop Result](mdassets/pdf/404-lighthouse-report-desktop.pdf) | [Lighthouse Mobile Result](mdassets/pdf/404-lighthouse-report-mobile.pdf)
 #### Known Bugs
 * No known bugs.
 
@@ -233,13 +233,13 @@ We welcome all contributions. To do so:
 
 ### Bugs & Feature Requests
 
-Should you find a bug and want to help us squash it. Please open an issue [here](https://github.com/LogisticBravo/Milestone_Project-1-3DPrintQ/issues/new) ensuring you add the 'bug' label  with clear detail under the following:
+Should you find a bug and want to help us squash it. Please open an issue [here](https://github.com/LogisticBravo/Milestone_Project-1-3DPrintQ/issues/new) ensuring you add the '**bug**' label  with clear detail under the following:
 * What you done?
 * Where you done it?
 * What you expected to happen?
 * What actually happened?
 	
-To request a new feature or function then please open an issue [here](https://github.com/LogisticBravo/Milestone_Project-1-3DPrintQ/issues/new) ensuring you add the 'enhancement' label  with proposed changes including snippets of how to do so.
+To request a new feature or function then please open an issue [here](https://github.com/LogisticBravo/Milestone_Project-1-3DPrintQ/issues/new) ensuring you add the '**enhancement**' label  with proposed changes including snippets of how to do so.
 
 ## Credits
 
@@ -250,15 +250,15 @@ To request a new feature or function then please open an issue [here](https://gi
 * Inversion of carousel arrow colours css code from this [stackoverflow Article](https://stackoverflow.com/questions/46249541/change-arrow-colors-in-bootstraps-carousel). 
 
 ### Content
-Majority of the about content was written by the developer Jay Bradley. As referenced, some is from wikipedia.  
-All article content in the resources section is copied from, with permission, Prusa Research.  
-Build guides are used with permission from Prusa research, Caribou3D and Grégoire Saunier.
+* Majority of the about content was written by the developer Jay Bradley. As referenced, some is from wikipedia.  
+* All article content in the resources section is copied from, with permission, Prusa Research.  
+* Build guides are used with permission from Prusa research, Caribou3D and Grégoire Saunier.
 
 ### Media
-The hero image was taken from [Google Images](shorturl.at/zIUZ7)   
-Various other images are taken from, with permission:  
-Prusa Research, Caribou 3D and Grégoire Saunier.  
-The embedded YouTube content is used with permission from Chris Warkocki.
+* The hero image was taken from [Google Images](shorturl.at/zIUZ7)   
+* Various other images are taken from, with permission:  
+* Prusa Research, Caribou 3D and Grégoire Saunier.  
+* The embedded YouTube content is used with permission from Chris Warkocki.
 
 ### Acknowledgements
 * My Mentor, Seun for feedback and guidance.
