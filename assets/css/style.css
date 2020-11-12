@@ -46,7 +46,7 @@ a:hover {
     text-transform: capitalize;
     font-family: 'Roboto';
     text-align: center;
-    text-shadow: 0.6rem 0.5rem 0.3rem white;
+    text-shadow: 0.6rem 0.5rem 0.3rem #4c4c47;
     font-weight: 700;
 }
 
@@ -106,6 +106,16 @@ a:hover {
 @keyframes slide-b {
   from {top: 100vh;}
   to {top: 456px;border: 2px solid #ff785a;}
+}
+
+@keyframes growing {
+    from {transform: scaleY(0) scaleX(0);}
+    to {transform: scaleY(1);}
+}
+
+.enlarge {
+    animation: growing 3s linear 1;
+    position: relative;
 }
 
 .slide-left {
