@@ -96,8 +96,9 @@ The site uses the following 5 colours primarily.
 * [The Roboto font](https://fonts.google.com/specimen/Roboto) is used on navigational and header elements throughout the site with sans serif as a fall back in case of errors in loading the font. Roboto is a clean and stylish popular choice as Androids default font and so fits the target market of those that are more ‘tech’ orientated. 
 * [Source Sans](https://fonts.google.com/specimen/Source+Sans+Pro) Pro is used for all content elements as it is intended for user interface elements and so is a fitting nod to user input screens on 3D printers. 
 #### Imagery
-The hero image was chosen to show the wide range of things of which an be 3D printed. With it’s vicarious colours it was used so as to be eye catching and as it fit the color scheme of the site.
-As branding is alway important, the brand logo is used within the header and the footer. The header is sticky and so keeps the branding in sight at all times. 
+The hero image was chosen to show the wide range of things of which an be 3D printed. With it’s vicarious colours it was used so as to be eye catching and as it fit the color scheme of the site.    
+As branding is alway important, the brand logo is used within the header and the footer.    
+The header is sticky and so keeps the branding in sight at all times. 
 #### Wireframes
 ![wireframeimage](mdassets/mdimages/wireframe.png)   
 ![wireframeimage](mdassets/mdimages/figmawireframe.png)     
@@ -151,7 +152,7 @@ freephototool.com was used to create the ‘3DPrintQ’ logo and it’s negative
 * Balsamiq desktop was used to create initial wireframes of the site. 
 #### [Figma](https://figma.com/)
 * Figma was used to create more detailed wirframing.
-#### Coolors.co
+#### [Coolors.co](https://coolors.co/)
 * Coloors was used to assist with choosing the colour scheme that is used throughout the website. Colours was given a baseline of the Blue and Grey colours which were already present in the logo and navbar.
 #### [jQuery](https://www.w3schools.com/jquery/default.asp)
 * jQuery came with Bootstrap to make the navbar responsive but was also used for modals.
