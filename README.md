@@ -104,13 +104,23 @@ As branding is alway important, the brand logo is used within the header and the
 Full Wireframes drawn up using Figma can be found [here](https://www.figma.com/file/AksKEgNktmnJGypPxnyAFT/Milestone-Project-1-3D-Print-Q?node-id=0%3A1)
 
 ## Features
+* The home page features a slick animation when viewed on a desktop. It also has a minor animation on mobile.   
+
+![Home Page Animation](mdassets/mdimages/indexanimation.gif)    
+
+* The footer is partially visible as you scroll to the bottom and fully reveals itself once the bottom of the page is reached.  
+
+![Reveal Footer](mdassets/mdimages/revealfooter.gif)    
+
 * The site is designed to be responsive across all devices.
-* The home page features a slick animation when viewed on a desktop.
 * The home page uses a carousel feature for the 3 build guides. Their runs and cycles through each option automatically, denotes which one is in view and also allows the user to navigate back and forth. The carousel is also responsive and so works on mobile and tablets.
 * All YouTube videos are embedded and can be play/paused by the user. As with all podcasts. 
-* The footer is partially visible as you scroll to the bottom and fully reveals itself once the bottom of the page is reached.
 * Sign-up opens the sign-up modal. 
-* Custom 404 page should the user navigate to a non-existant link.
+* Custom 404 page should the user navigate to a non-existant link which will automatically be redirected to home. This can be tested [here](https://logisticbravo.github.io/Milestone_Project-1-3DPrintQ/404.html)    
+![404 page image](mdassets/mdimages/404.png)    
+
+* All navigation links feature an underline from center animation. (Credit: hover.css)
+* Footer icons for address and email feature animations. (Credit: hover.css)
 
 ## Technologies Used
 ### Languages Used
