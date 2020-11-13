@@ -61,7 +61,9 @@ This was created to demonstrate learnings from the Code Institute software devel
 
 ## The 3D Print Q
 
-The3DPrintQ website is a fully responsive website designed to introduce hobbyists to 3D printing. It explains what 3D printing is and directs users to common ‘builds’ so that they can build their own! For the site owner, it’s purpose is to capture email addresses so as to promote paid content and affiliate links.    
+The3DPrintQ website is a fully responsive website designed to introduce hobbyists to 3D printing. It explains what 3D printing is and directs users to common ‘builds’ so that they can build their own!     
+For the site owner, it’s purpose is to capture email addresses so as to promote paid content and affiliate links.  
+
 A live version of the site can be viewed [here](https://logisticbravo.github.io/Milestone_Project-1-3DPrintQ/).
 
 ![image](mdassets/mdimages/responsivedisplays.png "Images of site on mutiple screen sizes")
@@ -91,8 +93,8 @@ The site uses the following 5 colours primarily.
 * Grey - rgb (76,76,71) #4C4C47
 * Orange - rgb(255,120,90) #FF785A
 #### Typography
-* The Roboto font is used on navigational and header elements throughout the site with sans serif as a fall back in case of errors in loading the font. Roboto is a clean and stylish popular choice as Androids default font and so fits the target market of those that are more ‘tech’ orientated. 
-* Source Sans Pro is used for all content elements as it is intended for user interface elements and so is a fitting nod to user input screens on 3D printers. 
+* [The Roboto font](https://fonts.google.com/specimen/Roboto) is used on navigational and header elements throughout the site with sans serif as a fall back in case of errors in loading the font. Roboto is a clean and stylish popular choice as Androids default font and so fits the target market of those that are more ‘tech’ orientated. 
+* [Source Sans](https://fonts.google.com/specimen/Source+Sans+Pro) Pro is used for all content elements as it is intended for user interface elements and so is a fitting nod to user input screens on 3D printers. 
 #### Imagery
 The hero image was chosen to show the wide range of things of which an be 3D printed. With it’s vicarious colours it was used so as to be eye catching and as it fit the color scheme of the site.
 As branding is alway important, the brand logo is used within the header and the footer. The header is sticky and so keeps the branding in sight at all times. 
@@ -116,7 +118,8 @@ Full Wireframes drawn up using Figma can be found [here](https://www.figma.com/f
 * The home page uses a carousel feature for the 3 build guides. Their runs and cycles through each option automatically, denotes which one is in view and also allows the user to navigate back and forth. The carousel is also responsive and so works on mobile and tablets.
 * All YouTube videos are embedded and can be play/paused by the user. As with all podcasts. 
 * Sign-up opens the sign-up modal. 
-* Custom 404 page should the user navigate to a non-existant link which will automatically be redirected to home. This can be tested [here](https://logisticbravo.github.io/Milestone_Project-1-3DPrintQ/404.html)    
+* Custom 404 page should the user navigate to a non-existant link which will automatically be redirected to home.   
+This can be tested [here](https://logisticbravo.github.io/Milestone_Project-1-3DPrintQ/404.html)    
 ![404 page image](mdassets/mdimages/404.png)    
 
 * All navigation links feature an underline from center animation. (Credit: hover.css)
@@ -271,7 +274,7 @@ To request a new feature or function then please open an issue [here](https://gi
 * The embedded YouTube content is used with permission from Chris Warkocki.
 
 ### Acknowledgements
-* My Mentor, Seun for feedback and guidance.
+* My Mentor, Seun for her great feedback and continously pushing me.
 * [Prusa Research](https://www.prusa3d.com/) for allowing me to use their images and content. 
 * [Caribou 3D](https://caribou3d.com/en/) for allowing me to use their images and content.
 * [Grégoire Saunier](https://github.com/gregsaun) for allowing me to use images.
